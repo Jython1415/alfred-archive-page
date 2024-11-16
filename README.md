@@ -10,13 +10,17 @@ You can download the [latest release](https://github.com/Jython1415/alfred-archi
 
 Archive a webpage by using the keyword "way" and passing in the URL. If the URL is already in your clipboard, you can use the workflow as a Universal Action instead.
 
-* <kbd>↩&#xFE0E;</kbd> Archive and copy the archive URL to clipboard.
-* <kbd>⌘</kbd><kbd>↩&#xFE0E;</kbd> Open the Wayback Machine website for archiving. No automatic copy to clipboard.
-* <kbd>⌥</kbd><kbd>↩&#xFE0E;</kbd> Copy the resulting URL in markdown format: `[archive](<URL>)`
+- <kbd>↩&#xFE0E;</kbd> Archive and copy the archive URL to clipboard.
+- <kbd>⌘</kbd><kbd>↩&#xFE0E;</kbd> Open the Wayback Machine website for archiving. No automatic copy to clipboard.
+- <kbd>⌥</kbd><kbd>↩&#xFE0E;</kbd> Copy the resulting URL in markdown format: `[archive](<URL>)`
+
+## Feedback
+
+Please provide feedback in [the dedicated topic on the Alfred "Share Your Workflows" forum](https://www.alfredforum.com/forum/3-share-your-workflows/).
 
 ## Acknowledgements
 
 - I heavily referenced the [Wayback When](https://github.com/alfredapp/wayback-when-workflow) workflow. In fact, the first version of my workflow was built on a duplicate of the Wayback When workflow.
 - I also referenced the README of Wayback When for styling this README.
 - Thank you [FireFingers21](https://www.alfredforum.com/profile/27846-firefingers21/) for initial review of the workflow.
-- The icon was downloaded from [UXWing](https://uxwing.com)
+- The icon was downloaded from [UXWing](https://uxwing.com).
