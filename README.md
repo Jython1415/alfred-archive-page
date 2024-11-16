@@ -18,6 +18,17 @@ Archive a webpage by using the keyword "way" and passing in the URL. If the URL 
 
 Please provide feedback in [the dedicated topic on the Alfred "Share Your Workflows" forum](https://www.alfredforum.com/forum/3-share-your-workflows/).
 
+## Roadmap
+
+- [x] Add status updates for when the content is copied to the clipboard
+- [ ] Add meaningful updates for possible error codes
+- [ ] Change the default behavior to make it optional to pass in a URL (see Wayback When for how this would work)
+
+### Improvements Under Consideration
+
+- [ ] Add configurable logging to the workflow
+- [ ] Switch to returning a URL instantly with the archiving being completed in the background (must be reliable)
+
 ## Acknowledgements
 
 - I heavily referenced the [Wayback When](https://github.com/alfredapp/wayback-when-workflow) workflow. In fact, the first version of my workflow was built on a duplicate of the Wayback When workflow.
