@@ -19,3 +19,4 @@ Archive a webpage by using the keyword "way" and passing in the URL. If the URL 
 - I heavily referenced the [Wayback When](https://github.com/alfredapp/wayback-when-workflow) workflow. In fact, the first version of my workflow was built on a duplicate of the Wayback When workflow.
 - I also referenced the README of Wayback When for styling this README.
 - Thank you [FireFingers21](https://www.alfredforum.com/profile/27846-firefingers21/) for initial review of the workflow.
+- The icon was downloaded from [UXWing](https://uxwing.com)
