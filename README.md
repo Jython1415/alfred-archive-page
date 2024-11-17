@@ -8,7 +8,7 @@ You can download the [latest release](https://github.com/Jython1415/alfred-archi
 
 ## Usage
 
-Archive a webpage by using the keyword "way" and passing in the URL. If the URL is already in your clipboard, you can use the workflow as a Universal Action instead.
+Archives the frontmost browser tab using Internet Archive's Wayback Machine. Alternatively, you can pass in a URL as an argument, or perform the action from Alfred clipboard history with the Universal Action.
 
 - <kbd>↩&#xFE0E;</kbd> Archive and copy the archive URL to clipboard.
 - <kbd>⌘</kbd><kbd>↩&#xFE0E;</kbd> Open the Wayback Machine website for archiving. No automatic copy to clipboard.
@@ -22,7 +22,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 
 - [x] Add status updates for when the content is copied to the clipboard
 - [x] Add meaningful updates for possible error codes (not yet released)
-- [ ] Change the default behavior to make it optional to pass in a URL (see Wayback When for how this would work)
+- [x] Change the default behavior to make it optional to pass in a URL
 
 ### Improvements Under Consideration
 
