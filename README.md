@@ -21,13 +21,14 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 ## Roadmap
 
 - [x] Add status updates for when the content is copied to the clipboard
+- [x] Add configurable logging to the workflow
 - [ ] Add meaningful updates for possible error codes
 - [ ] Change the default behavior to make it optional to pass in a URL (see Wayback When for how this would work)
 
 ### Improvements Under Consideration
 
-- [ ] Add configurable logging to the workflow
 - [ ] Switch to returning a URL instantly with the archiving being completed in the background (must be reliable)
+- [ ] Add different archive sites as a backup
 
 ## Acknowledgements
 
