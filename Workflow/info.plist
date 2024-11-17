@@ -744,7 +744,7 @@
 				<key>subtext</key>
 				<string>Saves a snapshot on the Wayback Machine</string>
 				<key>text</key>
-				<string>Archive Website</string>
+				<string>{const:alfred_workflow_name}</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
