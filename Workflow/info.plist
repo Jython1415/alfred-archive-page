@@ -1089,7 +1089,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 		<key>07FDD1A9-E4D8-4D04-A708-F88E8A93B1E5</key>
 		<dict>
 			<key>xpos</key>
-			<real>620</real>
+			<real>615</real>
 			<key>ypos</key>
 			<real>275</real>
 		</dict>
@@ -1172,7 +1172,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Update execution count</string>
 			<key>xpos</key>
-			<real>480</real>
+			<real>475</real>
 			<key>ypos</key>
 			<real>245</real>
 		</dict>
@@ -1200,7 +1200,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 		<key>84731D13-8E91-4FA8-BA9A-5A0FEA8ED416</key>
 		<dict>
 			<key>xpos</key>
-			<real>740</real>
+			<real>735</real>
 			<key>ypos</key>
 			<real>275</real>
 		</dict>
@@ -1244,7 +1244,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 		<key>B8F40A67-8A87-464F-A6CB-630D6C0FFF03</key>
 		<dict>
 			<key>xpos</key>
-			<real>680</real>
+			<real>675</real>
 			<key>ypos</key>
 			<real>275</real>
 		</dict>
