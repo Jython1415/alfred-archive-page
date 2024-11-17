@@ -23,6 +23,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 - [x] Add status updates for when the content is copied to the clipboard
 - [x] Add meaningful updates for possible error codes (not yet released)
 - [x] Change the default behavior to make it optional to pass in a URL
+- [ ] Make the keyword configurable
 
 ### Improvements Under Consideration
 
