@@ -24,6 +24,8 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 - [x] Add meaningful updates for possible error codes (not yet released)
 - [x] Change the default behavior to make it optional to pass in a URL
 - [ ] Make the keyword configurable
+- [ ] Add "always on" logging (configurable)
+- [ ] Add a prompt to notify the developer when an unexpected error comes up
 
 ### Improvements Under Consideration
 
