@@ -94,19 +94,6 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>259BF73D-636B-4BE4-842C-E47D6CF01A9A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>259BF73D-636B-4BE4-842C-E47D6CF01A9A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
 				<string>3DBFCECE-98BF-46F8-B734-C94784EBBA35</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -145,7 +132,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>00525244-6E05-4E3A-816B-13444679A564</string>
+				<string>63A6FE75-5B57-4FB8-B490-8C5824595B3D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -247,6 +234,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>07FDD1A9-E4D8-4D04-A708-F88E8A93B1E5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>63A6FE75-5B57-4FB8-B490-8C5824595B3D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>00525244-6E05-4E3A-816B-13444679A564</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -379,7 +379,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>259BF73D-636B-4BE4-842C-E47D6CF01A9A</string>
+				<string>3DBFCECE-98BF-46F8-B734-C94784EBBA35</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -532,6 +532,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{var:save_url}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>B406C83D-84DB-45C2-93FE-E139A2AB2F40</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>autopaste</key>
 				<false/>
 				<key>clipboardtext</key>
@@ -587,27 +608,6 @@
 			<string>alfred.workflow.trigger.universalaction</string>
 			<key>uid</key>
 			<string>C11C4571-75F4-40E1-BB41-D2E058002538</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>skipqueryencode</key>
-				<false/>
-				<key>skipvarencode</key>
-				<false/>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{var:save_url}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>B406C83D-84DB-45C2-93FE-E139A2AB2F40</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -871,15 +871,10 @@
 			<integer>1</integer>
 		</dict>
 		<dict>
-			<key>config</key>
-			<dict>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.transform</string>
+			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
-			<string>3DBFCECE-98BF-46F8-B734-C94784EBBA35</string>
+			<string>63A6FE75-5B57-4FB8-B490-8C5824595B3D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -917,10 +912,15 @@
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>config</key>
+			<dict>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
+			<string>alfred.workflow.utility.transform</string>
 			<key>uid</key>
-			<string>259BF73D-636B-4BE4-842C-E47D6CF01A9A</string>
+			<string>3DBFCECE-98BF-46F8-B734-C94784EBBA35</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -974,6 +974,29 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/bin/curl -I "${1}"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3F05845B-318D-41F8-B246-39DE5C5120B1</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
 				<string>function run(argv) {
@@ -999,29 +1022,6 @@
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>46B64247-5310-420C-9235-EA7D98610AEF</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>/usr/bin/curl -I "${1}"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>11</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>3F05845B-318D-41F8-B246-39DE5C5120B1</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -1339,16 +1339,9 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 		<key>1624ED0E-2636-4B4E-AEEE-81CD22F8F176</key>
 		<dict>
 			<key>xpos</key>
-			<real>695</real>
+			<real>770</real>
 			<key>ypos</key>
 			<real>265</real>
-		</dict>
-		<key>259BF73D-636B-4BE4-842C-E47D6CF01A9A</key>
-		<dict>
-			<key>xpos</key>
-			<real>830</real>
-			<key>ypos</key>
-			<real>185</real>
 		</dict>
 		<key>28798E41-F413-4714-885B-AED3EAA72460</key>
 		<dict>
@@ -1390,7 +1383,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>xpos</key>
 			<real>890</real>
 			<key>ypos</key>
-			<real>175</real>
+			<real>190</real>
 		</dict>
 		<key>3F05845B-318D-41F8-B246-39DE5C5120B1</key>
 		<dict>
@@ -1425,6 +1418,13 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<real>350</real>
 			<key>ypos</key>
 			<real>325</real>
+		</dict>
+		<key>63A6FE75-5B57-4FB8-B490-8C5824595B3D</key>
+		<dict>
+			<key>xpos</key>
+			<real>1925</real>
+			<key>ypos</key>
+			<real>175</real>
 		</dict>
 		<key>6602BF9F-E7FF-47B9-8726-765FC9C4D75D</key>
 		<dict>
@@ -1552,7 +1552,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>xpos</key>
 			<real>1925</real>
 			<key>ypos</key>
-			<real>130</real>
+			<real>135</real>
 		</dict>
 		<key>F3D0A9DE-D2D0-424D-8086-CE80104F31A4</key>
 		<dict>
