@@ -744,7 +744,7 @@
 				<key>subtext</key>
 				<string>Saves a snapshot on the Wayback Machine</string>
 				<key>text</key>
-				<string>Archive Website</string>
+				<string>{const:alfred_workflow_name}</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -1052,7 +1052,17 @@ echo $execution_count</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>See the GitHub page for usage instructions: https://github.com/Jython1415/alfred-archive-page</string>
+	<string>## Usage
+
+Archive a webpage by using the keyword "way" and passing in the URL. If the URL is already in your clipboard, you can use the workflow as a Universal Action instead.
+
+- &lt;kbd&gt;↩&amp;#xFE0E;&lt;/kbd&gt; Archive and copy the archive URL to clipboard.
+- &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&amp;#xFE0E;&lt;/kbd&gt; Open the Wayback Machine website for archiving. No automatic copy to clipboard.
+- &lt;kbd&gt;⌥&lt;/kbd&gt;&lt;kbd&gt;↩&amp;#xFE0E;&lt;/kbd&gt; Copy the resulting URL in markdown format: `[archive](&lt;URL&gt;)`
+
+## Feedback
+
+Please provide feedback in [the dedicated topic on the Alfred "Share Your Workflows" forum](https://www.alfredforum.com/forum/3-share-your-workflows/).</string>
 	<key>uidata</key>
 	<dict>
 		<key>00525244-6E05-4E3A-816B-13444679A564</key>
