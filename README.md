@@ -20,17 +20,21 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 
 ## Roadmap
 
-- [x] Add status updates for when the content is copied to the clipboard
-- [x] Add meaningful updates for possible error codes (not yet released)
-- [x] Change the default behavior to make it optional to pass in a URL
-- [ ] Make the keyword configurable
-- [ ] Add "always on" logging (configurable)
-- [ ] Add a prompt to notify the developer when an unexpected error comes up
+✅ Done
+🚧 Work in Progress
+
+- ✅ Add status updates for when the content is copied to the clipboard
+- ✅ Add meaningful updates for possible error code
+- ✅ Change the default behavior to make it optional to pass in a URL
+- 🚧 Make the keyword configurable
+- "Always on" logging (configurable and off by default)
+- Prompt to notify the developer when there is an unexpected error
+- Skip creating a new archive if there is already a snapshot within the last X minutes (configurable with override option)
 
 ### Improvements Under Consideration
 
-- [ ] Switch to returning a URL instantly with the archiving being completed in the background (must be reliable)
-- [ ] Add a longer-term fallback option: wait until Internet Archive can handle the link
+- Switch to returning a URL instantly with the archiving being completed in the background (must be reliable)
+- Add a longer-term fallback option: wait until Internet Archive can handle the link
 
 ## Acknowledgements
 
