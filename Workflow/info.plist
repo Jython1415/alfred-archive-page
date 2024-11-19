@@ -154,19 +154,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>1624ED0E-2636-4B4E-AEEE-81CD22F8F176</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>3DBFCECE-98BF-46F8-B734-C94784EBBA35</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>2656F3B3-B288-43B7-82CA-ECC8782008BA</key>
 		<array>
 			<dict>
@@ -472,7 +459,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>1624ED0E-2636-4B4E-AEEE-81CD22F8F176</string>
+				<string>3DBFCECE-98BF-46F8-B734-C94784EBBA35</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -625,7 +612,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>1624ED0E-2636-4B4E-AEEE-81CD22F8F176</string>
+				<string>3DBFCECE-98BF-46F8-B734-C94784EBBA35</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1396,14 +1383,6 @@
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>0436A082-2905-4151-B295-85E7AB3DB36E</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
-			<key>uid</key>
-			<string>1624ED0E-2636-4B4E-AEEE-81CD22F8F176</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2464,7 +2443,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 		<key>00525244-6E05-4E3A-816B-13444679A564</key>
 		<dict>
 			<key>xpos</key>
-			<real>1930</real>
+			<real>1880</real>
 			<key>ypos</key>
 			<real>155</real>
 		</dict>
@@ -2473,14 +2452,14 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1550</real>
+			<real>1500</real>
 			<key>ypos</key>
 			<real>765</real>
 		</dict>
 		<key>0436A082-2905-4151-B295-85E7AB3DB36E</key>
 		<dict>
 			<key>xpos</key>
-			<real>2010</real>
+			<real>1960</real>
 			<key>ypos</key>
 			<real>190</real>
 		</dict>
@@ -2494,7 +2473,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 		<key>07FDD1A9-E4D8-4D04-A708-F88E8A93B1E5</key>
 		<dict>
 			<key>xpos</key>
-			<real>590</real>
+			<real>540</real>
 			<key>ypos</key>
 			<real>765</real>
 		</dict>
@@ -2503,14 +2482,14 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1670</real>
+			<real>1620</real>
 			<key>ypos</key>
 			<real>765</real>
 		</dict>
 		<key>0D393281-9E09-41A4-9B27-4614DC3B096D</key>
 		<dict>
 			<key>xpos</key>
-			<real>1150</real>
+			<real>1100</real>
 			<key>ypos</key>
 			<real>375</real>
 		</dict>
@@ -2526,7 +2505,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1610</real>
+			<real>1560</real>
 			<key>ypos</key>
 			<real>525</real>
 		</dict>
@@ -2535,23 +2514,16 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>970</real>
+			<real>920</real>
 			<key>ypos</key>
 			<real>645</real>
-		</dict>
-		<key>1624ED0E-2636-4B4E-AEEE-81CD22F8F176</key>
-		<dict>
-			<key>xpos</key>
-			<real>765</real>
-			<key>ypos</key>
-			<real>190</real>
 		</dict>
 		<key>224070CE-2872-4F31-BE63-3D097849BF3A</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1730</real>
+			<real>1680</real>
 			<key>ypos</key>
 			<real>735</real>
 		</dict>
@@ -2560,21 +2532,21 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1290</real>
+			<real>1240</real>
 			<key>ypos</key>
 			<real>95</real>
 		</dict>
 		<key>28798E41-F413-4714-885B-AED3EAA72460</key>
 		<dict>
 			<key>xpos</key>
-			<real>885</real>
+			<real>835</real>
 			<key>ypos</key>
 			<real>190</real>
 		</dict>
 		<key>2BC44B43-52D6-4FDF-AC47-6FB7A4BDE083</key>
 		<dict>
 			<key>xpos</key>
-			<real>1740</real>
+			<real>1690</real>
 			<key>ypos</key>
 			<real>145</real>
 		</dict>
@@ -2583,14 +2555,14 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>830</real>
+			<real>780</real>
 			<key>ypos</key>
 			<real>765</real>
 		</dict>
 		<key>32B69491-AAE7-4CE2-9CA7-D4089BAD2818</key>
 		<dict>
 			<key>xpos</key>
-			<real>2010</real>
+			<real>1960</real>
 			<key>ypos</key>
 			<real>65</real>
 		</dict>
@@ -2599,7 +2571,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1030</real>
+			<real>980</real>
 			<key>ypos</key>
 			<real>525</real>
 		</dict>
@@ -2608,14 +2580,14 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1030</real>
+			<real>980</real>
 			<key>ypos</key>
 			<real>645</real>
 		</dict>
 		<key>399242CD-3558-40F0-8A85-34BA6165551C</key>
 		<dict>
 			<key>xpos</key>
-			<real>1680</real>
+			<real>1630</real>
 			<key>ypos</key>
 			<real>155</real>
 		</dict>
@@ -2624,7 +2596,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1730</real>
+			<real>1680</real>
 			<key>ypos</key>
 			<real>495</real>
 		</dict>
@@ -2633,14 +2605,14 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>970</real>
+			<real>920</real>
 			<key>ypos</key>
 			<real>885</real>
 		</dict>
 		<key>3DBFCECE-98BF-46F8-B734-C94784EBBA35</key>
 		<dict>
 			<key>xpos</key>
-			<real>825</real>
+			<real>775</real>
 			<key>ypos</key>
 			<real>190</real>
 		</dict>
@@ -2649,7 +2621,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Make "save" request</string>
 			<key>xpos</key>
-			<real>1150</real>
+			<real>1100</real>
 			<key>ypos</key>
 			<real>225</real>
 		</dict>
@@ -2665,7 +2637,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Parse output</string>
 			<key>xpos</key>
-			<real>1290</real>
+			<real>1240</real>
 			<key>ypos</key>
 			<real>225</real>
 		</dict>
@@ -2674,7 +2646,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Update execution count</string>
 			<key>xpos</key>
-			<real>450</real>
+			<real>400</real>
 			<key>ypos</key>
 			<real>735</real>
 		</dict>
@@ -2683,7 +2655,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1550</real>
+			<real>1500</real>
 			<key>ypos</key>
 			<real>525</real>
 		</dict>
@@ -2692,28 +2664,28 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1090</real>
+			<real>1040</real>
 			<key>ypos</key>
 			<real>765</real>
 		</dict>
 		<key>63A6FE75-5B57-4FB8-B490-8C5824595B3D</key>
 		<dict>
 			<key>xpos</key>
-			<real>1860</real>
+			<real>1810</real>
 			<key>ypos</key>
 			<real>175</real>
 		</dict>
 		<key>6602BF9F-E7FF-47B9-8726-765FC9C4D75D</key>
 		<dict>
 			<key>xpos</key>
-			<real>1495</real>
+			<real>1445</real>
 			<key>ypos</key>
 			<real>230</real>
 		</dict>
 		<key>692E59B2-C927-4523-8A93-4A2F5EAFE4EB</key>
 		<dict>
 			<key>xpos</key>
-			<real>2010</real>
+			<real>1960</real>
 			<key>ypos</key>
 			<real>315</real>
 		</dict>
@@ -2722,7 +2694,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1150</real>
+			<real>1100</real>
 			<key>ypos</key>
 			<real>495</real>
 		</dict>
@@ -2738,7 +2710,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1350</real>
+			<real>1300</real>
 			<key>ypos</key>
 			<real>95</real>
 		</dict>
@@ -2747,14 +2719,14 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1730</real>
+			<real>1680</real>
 			<key>ypos</key>
 			<real>615</real>
 		</dict>
 		<key>769109FD-17B7-4D94-BC64-4BCFB39DD187</key>
 		<dict>
 			<key>xpos</key>
-			<real>785</real>
+			<real>775</real>
 			<key>ypos</key>
 			<real>65</real>
 		</dict>
@@ -2763,7 +2735,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>710</real>
+			<real>660</real>
 			<key>ypos</key>
 			<real>765</real>
 		</dict>
@@ -2772,7 +2744,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1090</real>
+			<real>1040</real>
 			<key>ypos</key>
 			<real>645</real>
 		</dict>
@@ -2781,7 +2753,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1150</real>
+			<real>1100</real>
 			<key>ypos</key>
 			<real>735</real>
 		</dict>
@@ -2790,7 +2762,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1470</real>
+			<real>1420</real>
 			<key>ypos</key>
 			<real>65</real>
 		</dict>
@@ -2799,7 +2771,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>970</real>
+			<real>920</real>
 			<key>ypos</key>
 			<real>525</real>
 		</dict>
@@ -2808,7 +2780,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>770</real>
+			<real>720</real>
 			<key>ypos</key>
 			<real>885</real>
 		</dict>
@@ -2817,21 +2789,21 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1090</real>
+			<real>1040</real>
 			<key>ypos</key>
 			<real>525</real>
 		</dict>
 		<key>A494B119-203B-4344-B0ED-F93B647E8410</key>
 		<dict>
 			<key>xpos</key>
-			<real>1435</real>
+			<real>1385</real>
 			<key>ypos</key>
 			<real>255</real>
 		</dict>
 		<key>AEEA4683-BAD9-4A31-B31B-7A391CDF74DC</key>
 		<dict>
 			<key>xpos</key>
-			<real>2010</real>
+			<real>1960</real>
 			<key>ypos</key>
 			<real>435</real>
 		</dict>
@@ -2854,7 +2826,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1030</real>
+			<real>980</real>
 			<key>ypos</key>
 			<real>765</real>
 		</dict>
@@ -2863,7 +2835,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Make "save" request with the website</string>
 			<key>xpos</key>
-			<real>1150</real>
+			<real>1100</real>
 			<key>ypos</key>
 			<real>65</real>
 		</dict>
@@ -2872,14 +2844,14 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1610</real>
+			<real>1560</real>
 			<key>ypos</key>
 			<real>645</real>
 		</dict>
 		<key>B8F40A67-8A87-464F-A6CB-630D6C0FFF03</key>
 		<dict>
 			<key>xpos</key>
-			<real>650</real>
+			<real>600</real>
 			<key>ypos</key>
 			<real>765</real>
 		</dict>
@@ -2888,7 +2860,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1550</real>
+			<real>1500</real>
 			<key>ypos</key>
 			<real>645</real>
 		</dict>
@@ -2906,7 +2878,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Trim the log file</string>
 			<key>xpos</key>
-			<real>890</real>
+			<real>840</real>
 			<key>ypos</key>
 			<real>735</real>
 		</dict>
@@ -2917,7 +2889,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>every 10th execution...</string>
 			<key>xpos</key>
-			<real>770</real>
+			<real>720</real>
 			<key>ypos</key>
 			<real>765</real>
 		</dict>
@@ -2926,7 +2898,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1030</real>
+			<real>980</real>
 			<key>ypos</key>
 			<real>885</real>
 		</dict>
@@ -2935,7 +2907,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1410</real>
+			<real>1360</real>
 			<key>ypos</key>
 			<real>95</real>
 		</dict>
@@ -2944,14 +2916,14 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1610</real>
+			<real>1560</real>
 			<key>ypos</key>
 			<real>765</real>
 		</dict>
 		<key>DE9CC0C4-98C1-4F76-BFC5-E4A327EAC219</key>
 		<dict>
 			<key>xpos</key>
-			<real>945</real>
+			<real>905</real>
 			<key>ypos</key>
 			<real>165</real>
 		</dict>
@@ -2967,7 +2939,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1670</real>
+			<real>1620</real>
 			<key>ypos</key>
 			<real>645</real>
 		</dict>
@@ -2976,7 +2948,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1150</real>
+			<real>1100</real>
 			<key>ypos</key>
 			<real>615</real>
 		</dict>
@@ -2985,14 +2957,14 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1670</real>
+			<real>1620</real>
 			<key>ypos</key>
 			<real>525</real>
 		</dict>
 		<key>E7E4D48D-9953-4B87-826A-9EE0CF543A49</key>
 		<dict>
 			<key>xpos</key>
-			<real>1860</real>
+			<real>1810</real>
 			<key>ypos</key>
 			<real>135</real>
 		</dict>
@@ -3001,7 +2973,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1090</real>
+			<real>1040</real>
 			<key>ypos</key>
 			<real>885</real>
 		</dict>
@@ -3010,7 +2982,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1150</real>
+			<real>1100</real>
 			<key>ypos</key>
 			<real>855</real>
 		</dict>
