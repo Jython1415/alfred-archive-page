@@ -119,7 +119,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>2D623F48-4979-4B40-B451-7B807BDBF200</string>
+				<string>FAD46A54-2688-4773-83EB-5651399A279E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -986,6 +986,21 @@
 				<false/>
 			</dict>
 		</array>
+		<key>938E779E-3EAD-45D5-9692-5B5E619DE9BD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4C98A5BB-1BBB-49DA-89B3-2688F4828CF9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>98E68395-2F21-4774-B833-3F17967E038D</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>945E75C2-3BF0-41F8-BAE7-20FE96C56608</key>
 		<array>
 			<dict>
@@ -1113,6 +1128,18 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>CA4F9010-BF3C-4C76-9244-D14DFB0FE94E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>04C66E55-DF8B-4432-BBAB-5FB0D3FDADA6</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -1318,6 +1345,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>BF9338CD-F59B-47E0-8AD0-74AD0BDB1EDB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>938E779E-3EAD-45D5-9692-5B5E619DE9BD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C11C4571-75F4-40E1-BB41-D2E058002538</key>
 		<array>
 			<dict>
@@ -1399,6 +1439,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>3FECBFC7-182A-423E-BF77-0BD026F1A29E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CA4F9010-BF3C-4C76-9244-D14DFB0FE94E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BF9338CD-F59B-47E0-8AD0-74AD0BDB1EDB</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1702,6 +1755,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>E2A2A1F7-4F36-4DDA-A5B3-C6300ED1811F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FAD46A54-2688-4773-83EB-5651399A279E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2D623F48-4979-4B40-B451-7B807BDBF200</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -2055,7 +2121,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/bin/curl -s "${1}"</string>
+				<string>/usr/bin/curl -s --max-time "${request_timeout}" "${1}"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -2067,6 +2133,34 @@
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>3A219FF3-DDC7-4ADA-81EB-C857BED23AAB</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string># $1 is assume to be the snapshot tolerance in seconds
+if (( $1 &gt;= $seconds_since_snapshot )); then
+  echo -n 1
+else
+  echo -n 0
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>FAD46A54-2688-4773-83EB-5651399A279E</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -2245,13 +2339,13 @@ fi</string>
 				<array>
 					<dict>
 						<key>inputstring</key>
-						<string>{var:seconds_since_snapshot}</string>
+						<string>{query}</string>
 						<key>matchcasesensitive</key>
 						<false/>
 						<key>matchmode</key>
-						<integer>2</integer>
+						<integer>0</integer>
 						<key>matchstring</key>
-						<string>{query}</string>
+						<string>0</string>
 						<key>outputlabel</key>
 						<string>Invalid snapshot</string>
 						<key>uid</key>
@@ -2611,7 +2705,13 @@ fi</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/bin/curl -I "${1}"</string>
+				<string>response=$(/usr/bin/curl -I --max-time "${request_timeout}" "${1}")
+
+if [ $? -eq 28 ]; then
+    echo -n "Error: Timed out"
+else
+    echo -n "${response}"
+fi</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -2746,33 +2846,6 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.output.writefile</string>
 			<key>uid</key>
-			<string>E17B30C3-54C4-4692-ABE0-45DB3A5DC587</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>adduuid</key>
-				<false/>
-				<key>allowemptyfiles</key>
-				<true/>
-				<key>createintermediatefolders</key>
-				<false/>
-				<key>filename</key>
-				<string>log.txt</string>
-				<key>filetext</key>
-				<string>[{date} - {time}] {query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>relativepathmode</key>
-				<integer>0</integer>
-				<key>type</key>
-				<integer>3</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.writefile</string>
-			<key>uid</key>
 			<string>195B4B1B-EA56-4477-80F4-3029C37852DB</string>
 			<key>version</key>
 			<integer>1</integer>
@@ -2801,6 +2874,33 @@ fi</string>
 			<string>alfred.workflow.output.writefile</string>
 			<key>uid</key>
 			<string>6E99B377-8CBF-47C3-8E59-86204E3B47B0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>adduuid</key>
+				<false/>
+				<key>allowemptyfiles</key>
+				<true/>
+				<key>createintermediatefolders</key>
+				<false/>
+				<key>filename</key>
+				<string>log.txt</string>
+				<key>filetext</key>
+				<string>[{date} - {time}] {query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>relativepathmode</key>
+				<integer>0</integer>
+				<key>type</key>
+				<integer>3</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.writefile</string>
+			<key>uid</key>
+			<string>4C98A5BB-1BBB-49DA-89B3-2688F4828CF9</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2846,6 +2946,23 @@ fi</string>
 			<key>config</key>
 			<dict>
 				<key>argument</key>
+				<string>Output from the snapshot request could not be parsed. Proceeding to request a new snapshot.</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>CA4F9010-BF3C-4C76-9244-D14DFB0FE94E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
 				<string>Invalid snapshot detected; proceeding to requesting a new snapshot</string>
 				<key>passthroughargument</key>
 				<false/>
@@ -2856,55 +2973,6 @@ fi</string>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>C843B6E8-182F-474E-ADC2-939424AC5A8F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:always_on_logging}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>1</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>98E68395-2F21-4774-B833-3F17967E038D</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-				<key>hideelse</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>1147751A-E836-409E-A501-EB0E96747AD9</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>Snapshot request output (parsed): {query}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>9B72DBD1-42F8-43BD-93F6-A8EDB9645B1C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2960,17 +3028,32 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string>{query}</string>
-				<key>cleardebuggertext</key>
-				<false/>
-				<key>processoutputs</key>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:always_on_logging}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>1</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>98E68395-2F21-4774-B833-3F17967E038D</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.debug</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>BD857955-D07E-4DBB-8914-E6636E01EBEE</string>
+			<string>938E779E-3EAD-45D5-9692-5B5E619DE9BD</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -3026,6 +3109,23 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>cleardebuggertext</key>
+				<false/>
+				<key>processoutputs</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.debug</string>
+			<key>uid</key>
+			<string>BF9338CD-F59B-47E0-8AD0-74AD0BDB1EDB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -3067,7 +3167,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.output.writefile</string>
 			<key>uid</key>
-			<string>70B13351-4D46-4BE2-A2FA-B68324AE406B</string>
+			<string>E17B30C3-54C4-4692-ABE0-45DB3A5DC587</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -3174,7 +3274,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>C5AAAA90-550A-42E9-9EB0-EB639EE07A78</string>
+			<string>1147751A-E836-409E-A501-EB0E96747AD9</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -3182,7 +3282,7 @@ fi</string>
 			<key>config</key>
 			<dict>
 				<key>argument</key>
-				<string>Snapshot request output (raw): {query}</string>
+				<string>Snapshot request output (parsed): {query}</string>
 				<key>passthroughargument</key>
 				<false/>
 				<key>variables</key>
@@ -3191,7 +3291,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>DFC44D3F-AF49-4C38-AF8E-6488F6D91721</string>
+			<string>9B72DBD1-42F8-43BD-93F6-A8EDB9645B1C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -3230,23 +3330,6 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string>{query}</string>
-				<key>cleardebuggertext</key>
-				<false/>
-				<key>processoutputs</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.debug</string>
-			<key>uid</key>
-			<string>81B0D932-DF72-4CBC-BD80-D1354093B73C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -3273,6 +3356,23 @@ fi</string>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>8737A544-4896-4EFD-9F5C-D0DF69495C37</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>cleardebuggertext</key>
+				<false/>
+				<key>processoutputs</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.debug</string>
+			<key>uid</key>
+			<string>BD857955-D07E-4DBB-8914-E6636E01EBEE</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -3517,6 +3617,33 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.output.writefile</string>
 			<key>uid</key>
+			<string>70B13351-4D46-4BE2-A2FA-B68324AE406B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>adduuid</key>
+				<false/>
+				<key>allowemptyfiles</key>
+				<true/>
+				<key>createintermediatefolders</key>
+				<false/>
+				<key>filename</key>
+				<string>log.txt</string>
+				<key>filetext</key>
+				<string>[{date} - {time}] {query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>relativepathmode</key>
+				<integer>0</integer>
+				<key>type</key>
+				<integer>3</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.writefile</string>
+			<key>uid</key>
 			<string>50ADBCC0-0B0E-432E-AFBB-8C6F319FF8BB</string>
 			<key>version</key>
 			<integer>1</integer>
@@ -3583,6 +3710,55 @@ echo -n $execution_count</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:always_on_logging}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>1</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>98E68395-2F21-4774-B833-3F17967E038D</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>C5AAAA90-550A-42E9-9EB0-EB639EE07A78</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>Snapshot request output (raw): {query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>DFC44D3F-AF49-4C38-AF8E-6488F6D91721</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string>{query}</string>
 				<key>cleardebuggertext</key>
@@ -3626,6 +3802,23 @@ echo -n $execution_count</string>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>828FE9FF-31D2-4043-9129-89E8FD56F8F9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>cleardebuggertext</key>
+				<false/>
+				<key>processoutputs</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.debug</string>
+			<key>uid</key>
+			<string>81B0D932-DF72-4CBC-BD80-D1354093B73C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -4167,7 +4360,12 @@ EOB</string>
 			<key>config</key>
 			<dict>
 				<key>argument</key>
-				<string>Execution count: {query}</string>
+				<string>
+Execution count: {query}
+primary_keyword: {var:primary_keyword}
+snapshot_tolerance: {var:snapshot_tolerance}
+request_timeout: {var:request_timeout}
+</string>
 				<key>passthroughargument</key>
 				<false/>
 				<key>variables</key>
@@ -4555,7 +4753,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 		<key>00525244-6E05-4E3A-816B-13444679A564</key>
 		<dict>
 			<key>xpos</key>
-			<real>3490</real>
+			<real>3630</real>
 			<key>ypos</key>
 			<real>155</real>
 		</dict>
@@ -4564,21 +4762,21 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2900</real>
+			<real>3040</real>
 			<key>ypos</key>
 			<real>765</real>
 		</dict>
 		<key>0436A082-2905-4151-B295-85E7AB3DB36E</key>
 		<dict>
 			<key>xpos</key>
-			<real>3570</real>
+			<real>3710</real>
 			<key>ypos</key>
 			<real>185</real>
 		</dict>
 		<key>04DEF9EA-A37E-42BF-B3F2-3336AA6A5E0D</key>
 		<dict>
 			<key>xpos</key>
-			<real>4665</real>
+			<real>4805</real>
 			<key>ypos</key>
 			<real>755</real>
 		</dict>
@@ -4594,7 +4792,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>3020</real>
+			<real>3160</real>
 			<key>ypos</key>
 			<real>765</real>
 		</dict>
@@ -4610,14 +4808,14 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2240</real>
+			<real>2380</real>
 			<key>ypos</key>
 			<real>325</real>
 		</dict>
 		<key>0D393281-9E09-41A4-9B27-4614DC3B096D</key>
 		<dict>
 			<key>xpos</key>
-			<real>2495</real>
+			<real>2635</real>
 			<key>ypos</key>
 			<real>375</real>
 		</dict>
@@ -4626,7 +4824,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2120</real>
+			<real>2260</real>
 			<key>ypos</key>
 			<real>685</real>
 		</dict>
@@ -4635,9 +4833,9 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1580</real>
+			<real>1685</real>
 			<key>ypos</key>
-			<real>325</real>
+			<real>445</real>
 		</dict>
 		<key>1283D3AB-7039-46A2-872D-F79432E4A742</key>
 		<dict>
@@ -4651,7 +4849,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2960</real>
+			<real>3100</real>
 			<key>ypos</key>
 			<real>525</real>
 		</dict>
@@ -4669,7 +4867,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2300</real>
+			<real>2440</real>
 			<key>ypos</key>
 			<real>295</real>
 		</dict>
@@ -4678,28 +4876,28 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2120</real>
+			<real>2260</real>
 			<key>ypos</key>
 			<real>565</real>
 		</dict>
 		<key>1CC3B9A5-664D-4DA7-9421-E5491A7C14D6</key>
 		<dict>
 			<key>xpos</key>
-			<real>3470</real>
+			<real>3610</real>
 			<key>ypos</key>
 			<real>575</real>
 		</dict>
 		<key>21630F99-3689-445F-BCEB-627EA5873275</key>
 		<dict>
 			<key>xpos</key>
-			<real>4280</real>
+			<real>4420</real>
 			<key>ypos</key>
 			<real>745</real>
 		</dict>
 		<key>223CB1B6-0337-4DF6-B70D-583CC72A0334</key>
 		<dict>
 			<key>xpos</key>
-			<real>4135</real>
+			<real>4275</real>
 			<key>ypos</key>
 			<real>725</real>
 		</dict>
@@ -4708,7 +4906,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>3080</real>
+			<real>3220</real>
 			<key>ypos</key>
 			<real>735</real>
 		</dict>
@@ -4717,7 +4915,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2635</real>
+			<real>2775</real>
 			<key>ypos</key>
 			<real>95</real>
 		</dict>
@@ -4733,21 +4931,21 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Use existing snapshot</string>
 			<key>xpos</key>
-			<real>2240</real>
+			<real>2380</real>
 			<key>ypos</key>
 			<real>65</real>
 		</dict>
 		<key>2BC44B43-52D6-4FDF-AC47-6FB7A4BDE083</key>
 		<dict>
 			<key>xpos</key>
-			<real>3300</real>
+			<real>3440</real>
 			<key>ypos</key>
 			<real>145</real>
 		</dict>
 		<key>2D623F48-4979-4B40-B451-7B807BDBF200</key>
 		<dict>
 			<key>xpos</key>
-			<real>1945</real>
+			<real>2085</real>
 			<key>ypos</key>
 			<real>165</real>
 		</dict>
@@ -4765,14 +4963,14 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2240</real>
+			<real>2380</real>
 			<key>ypos</key>
 			<real>685</real>
 		</dict>
 		<key>32B69491-AAE7-4CE2-9CA7-D4089BAD2818</key>
 		<dict>
 			<key>xpos</key>
-			<real>3570</real>
+			<real>3710</real>
 			<key>ypos</key>
 			<real>65</real>
 		</dict>
@@ -4797,7 +4995,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 		<key>38AAAE9D-FBC8-401A-8474-C4EE1C06DFAB</key>
 		<dict>
 			<key>xpos</key>
-			<real>4490</real>
+			<real>4630</real>
 			<key>ypos</key>
 			<real>785</real>
 		</dict>
@@ -4813,7 +5011,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 		<key>399242CD-3558-40F0-8A85-34BA6165551C</key>
 		<dict>
 			<key>xpos</key>
-			<real>3230</real>
+			<real>3370</real>
 			<key>ypos</key>
 			<real>175</real>
 		</dict>
@@ -4838,7 +5036,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>3080</real>
+			<real>3220</real>
 			<key>ypos</key>
 			<real>495</real>
 		</dict>
@@ -4863,7 +5061,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Make "save" request</string>
 			<key>xpos</key>
-			<real>2495</real>
+			<real>2635</real>
 			<key>ypos</key>
 			<real>225</real>
 		</dict>
@@ -4872,7 +5070,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2180</real>
+			<real>2320</real>
 			<key>ypos</key>
 			<real>325</real>
 		</dict>
@@ -4888,14 +5086,14 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2120</real>
+			<real>2260</real>
 			<key>ypos</key>
 			<real>445</real>
 		</dict>
 		<key>463ECDE9-04E4-4D63-9D1B-615A6C814C88</key>
 		<dict>
 			<key>xpos</key>
-			<real>2100</real>
+			<real>2240</real>
 			<key>ypos</key>
 			<real>175</real>
 		</dict>
@@ -4904,7 +5102,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Parse output</string>
 			<key>xpos</key>
-			<real>2635</real>
+			<real>2775</real>
 			<key>ypos</key>
 			<real>225</real>
 		</dict>
@@ -4922,14 +5120,23 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2900</real>
+			<real>3040</real>
 			<key>ypos</key>
 			<real>525</real>
+		</dict>
+		<key>4C98A5BB-1BBB-49DA-89B3-2688F4828CF9</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>1745</real>
+			<key>ypos</key>
+			<real>295</real>
 		</dict>
 		<key>4E36F139-C089-4B88-9FA9-C48547FBE7E2</key>
 		<dict>
 			<key>xpos</key>
-			<real>4450</real>
+			<real>4590</real>
 			<key>ypos</key>
 			<real>665</real>
 		</dict>
@@ -4938,14 +5145,14 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2300</real>
+			<real>2440</real>
 			<key>ypos</key>
 			<real>535</real>
 		</dict>
 		<key>50D1E738-8688-4B59-93B6-C2EEC559E199</key>
 		<dict>
 			<key>xpos</key>
-			<real>4735</real>
+			<real>4875</real>
 			<key>ypos</key>
 			<real>785</real>
 		</dict>
@@ -4963,7 +5170,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2180</real>
+			<real>2320</real>
 			<key>ypos</key>
 			<real>565</real>
 		</dict>
@@ -4977,7 +5184,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 		<key>63A6FE75-5B57-4FB8-B490-8C5824595B3D</key>
 		<dict>
 			<key>xpos</key>
-			<real>3420</real>
+			<real>3560</real>
 			<key>ypos</key>
 			<real>175</real>
 		</dict>
@@ -4986,21 +5193,21 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2180</real>
+			<real>2320</real>
 			<key>ypos</key>
 			<real>685</real>
 		</dict>
 		<key>6602BF9F-E7FF-47B9-8726-765FC9C4D75D</key>
 		<dict>
 			<key>xpos</key>
-			<real>2900</real>
+			<real>3040</real>
 			<key>ypos</key>
 			<real>215</real>
 		</dict>
 		<key>692E59B2-C927-4523-8A93-4A2F5EAFE4EB</key>
 		<dict>
 			<key>xpos</key>
-			<real>3570</real>
+			<real>3710</real>
 			<key>ypos</key>
 			<real>425</real>
 		</dict>
@@ -5027,9 +5234,9 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1640</real>
+			<real>1745</real>
 			<key>ypos</key>
-			<real>415</real>
+			<real>535</real>
 		</dict>
 		<key>70EB7E1C-20D1-4B70-998B-A502BE805C3A</key>
 		<dict>
@@ -5043,7 +5250,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2695</real>
+			<real>2835</real>
 			<key>ypos</key>
 			<real>95</real>
 		</dict>
@@ -5052,7 +5259,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>3080</real>
+			<real>3220</real>
 			<key>ypos</key>
 			<real>615</real>
 		</dict>
@@ -5068,16 +5275,16 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1520</real>
+			<real>1625</real>
 			<key>ypos</key>
-			<real>445</real>
+			<real>565</real>
 		</dict>
 		<key>828FE9FF-31D2-4043-9129-89E8FD56F8F9</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2240</real>
+			<real>2380</real>
 			<key>ypos</key>
 			<real>565</real>
 		</dict>
@@ -5120,14 +5327,14 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2815</real>
+			<real>2955</real>
 			<key>ypos</key>
 			<real>65</real>
 		</dict>
 		<key>8D346847-EA2A-4B2E-A1D0-B068EA1614F4</key>
 		<dict>
 			<key>xpos</key>
-			<real>3925</real>
+			<real>4065</real>
 			<key>ypos</key>
 			<real>605</real>
 		</dict>
@@ -5140,24 +5347,33 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>ypos</key>
 			<real>325</real>
 		</dict>
+		<key>938E779E-3EAD-45D5-9692-5B5E619DE9BD</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>1685</real>
+			<key>ypos</key>
+			<real>325</real>
+		</dict>
 		<key>945E75C2-3BF0-41F8-BAE7-20FE96C56608</key>
 		<dict>
 			<key>xpos</key>
-			<real>2840</real>
+			<real>2980</real>
 			<key>ypos</key>
 			<real>255</real>
 		</dict>
 		<key>964AEFAE-AEA4-474A-869C-D92D66F6803D</key>
 		<dict>
 			<key>xpos</key>
-			<real>4385</real>
+			<real>4525</real>
 			<key>ypos</key>
 			<real>695</real>
 		</dict>
 		<key>977BD828-87B3-4F4D-867F-EA2523D4B14D</key>
 		<dict>
 			<key>xpos</key>
-			<real>3630</real>
+			<real>3770</real>
 			<key>ypos</key>
 			<real>665</real>
 		</dict>
@@ -5166,9 +5382,9 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1460</real>
+			<real>1565</real>
 			<key>ypos</key>
-			<real>325</real>
+			<real>445</real>
 		</dict>
 		<key>9BB20102-856F-4B96-90FA-A2DE68177245</key>
 		<dict>
@@ -5182,7 +5398,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 		<key>9C6B477E-C34D-40BA-BBC7-BEC4A30BF228</key>
 		<dict>
 			<key>xpos</key>
-			<real>3925</real>
+			<real>4065</real>
 			<key>ypos</key>
 			<real>725</real>
 		</dict>
@@ -5191,7 +5407,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Create new snapshot</string>
 			<key>xpos</key>
-			<real>2100</real>
+			<real>2240</real>
 			<key>ypos</key>
 			<real>65</real>
 		</dict>
@@ -5214,14 +5430,14 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 		<key>A494B119-203B-4344-B0ED-F93B647E8410</key>
 		<dict>
 			<key>xpos</key>
-			<real>2780</real>
+			<real>2920</real>
 			<key>ypos</key>
 			<real>255</real>
 		</dict>
 		<key>A660D27C-E4A0-4F57-879A-A72E86DAD017</key>
 		<dict>
 			<key>xpos</key>
-			<real>2240</real>
+			<real>2380</real>
 			<key>ypos</key>
 			<real>175</real>
 		</dict>
@@ -5244,7 +5460,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 		<key>AEEA4683-BAD9-4A31-B31B-7A391CDF74DC</key>
 		<dict>
 			<key>xpos</key>
-			<real>3570</real>
+			<real>3710</real>
 			<key>ypos</key>
 			<real>545</real>
 		</dict>
@@ -5274,7 +5490,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 		<key>B3188055-2AB0-46BF-8839-E35CF6983D4E</key>
 		<dict>
 			<key>xpos</key>
-			<real>4735</real>
+			<real>4875</real>
 			<key>ypos</key>
 			<real>665</real>
 		</dict>
@@ -5283,7 +5499,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Make "save" request with the website</string>
 			<key>xpos</key>
-			<real>2495</real>
+			<real>2635</real>
 			<key>ypos</key>
 			<real>65</real>
 		</dict>
@@ -5292,7 +5508,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2960</real>
+			<real>3100</real>
 			<key>ypos</key>
 			<real>645</real>
 		</dict>
@@ -5308,7 +5524,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2900</real>
+			<real>3040</real>
 			<key>ypos</key>
 			<real>645</real>
 		</dict>
@@ -5317,16 +5533,25 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1520</real>
+			<real>1625</real>
 			<key>ypos</key>
-			<real>325</real>
+			<real>445</real>
 		</dict>
 		<key>BF369C25-EC7B-4197-8321-E899FE9C3C25</key>
 		<dict>
 			<key>xpos</key>
-			<real>4595</real>
+			<real>4735</real>
 			<key>ypos</key>
 			<real>695</real>
+		</dict>
+		<key>BF9338CD-F59B-47E0-8AD0-74AD0BDB1EDB</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>1625</real>
+			<key>ypos</key>
+			<real>325</real>
 		</dict>
 		<key>C11C4571-75F4-40E1-BB41-D2E058002538</key>
 		<dict>
@@ -5351,9 +5576,9 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1580</real>
+			<real>1685</real>
 			<key>ypos</key>
-			<real>445</real>
+			<real>565</real>
 		</dict>
 		<key>C60398F8-5F13-420D-91DF-8327BF7DD1F9</key>
 		<dict>
@@ -5371,7 +5596,16 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2120</real>
+			<real>2260</real>
+			<key>ypos</key>
+			<real>325</real>
+		</dict>
+		<key>CA4F9010-BF3C-4C76-9244-D14DFB0FE94E</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>1565</real>
 			<key>ypos</key>
 			<real>325</real>
 		</dict>
@@ -5380,7 +5614,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2240</real>
+			<real>2380</real>
 			<key>ypos</key>
 			<real>445</real>
 		</dict>
@@ -5403,7 +5637,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 		<key>D57C324B-1BD1-4E74-B25A-6F7E3D0C0D4E</key>
 		<dict>
 			<key>xpos</key>
-			<real>4070</real>
+			<real>4210</real>
 			<key>ypos</key>
 			<real>755</real>
 		</dict>
@@ -5412,7 +5646,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2755</real>
+			<real>2895</real>
 			<key>ypos</key>
 			<real>95</real>
 		</dict>
@@ -5421,7 +5655,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2300</real>
+			<real>2440</real>
 			<key>ypos</key>
 			<real>415</real>
 		</dict>
@@ -5430,21 +5664,21 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2960</real>
+			<real>3100</real>
 			<key>ypos</key>
 			<real>765</real>
 		</dict>
 		<key>DCACFD29-6669-4AB1-A97B-92BDDF86ED77</key>
 		<dict>
 			<key>xpos</key>
-			<real>3570</real>
+			<real>3710</real>
 			<key>ypos</key>
 			<real>695</real>
 		</dict>
 		<key>DE9CC0C4-98C1-4F76-BFC5-E4A327EAC219</key>
 		<dict>
 			<key>xpos</key>
-			<real>2300</real>
+			<real>2440</real>
 			<key>ypos</key>
 			<real>165</real>
 		</dict>
@@ -5460,23 +5694,23 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1460</real>
+			<real>1565</real>
 			<key>ypos</key>
-			<real>445</real>
+			<real>565</real>
 		</dict>
 		<key>E17B30C3-54C4-4692-ABE0-45DB3A5DC587</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1640</real>
+			<real>1745</real>
 			<key>ypos</key>
-			<real>295</real>
+			<real>415</real>
 		</dict>
 		<key>E1900327-96BA-46DB-A062-ACB34997FE5A</key>
 		<dict>
 			<key>xpos</key>
-			<real>3570</real>
+			<real>3710</real>
 			<key>ypos</key>
 			<real>305</real>
 		</dict>
@@ -5485,14 +5719,14 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>3020</real>
+			<real>3160</real>
 			<key>ypos</key>
 			<real>645</real>
 		</dict>
 		<key>E2A2A1F7-4F36-4DDA-A5B3-C6300ED1811F</key>
 		<dict>
 			<key>xpos</key>
-			<real>3230</real>
+			<real>3370</real>
 			<key>ypos</key>
 			<real>135</real>
 		</dict>
@@ -5510,21 +5744,21 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>3020</real>
+			<real>3160</real>
 			<key>ypos</key>
 			<real>525</real>
 		</dict>
 		<key>E7E4D48D-9953-4B87-826A-9EE0CF543A49</key>
 		<dict>
 			<key>xpos</key>
-			<real>3420</real>
+			<real>3560</real>
 			<key>ypos</key>
 			<real>135</real>
 		</dict>
 		<key>E8EE7CC9-830F-4F5C-9B08-B1760B95753C</key>
 		<dict>
 			<key>xpos</key>
-			<real>3780</real>
+			<real>3920</real>
 			<key>ypos</key>
 			<real>685</real>
 		</dict>
@@ -5558,7 +5792,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2300</real>
+			<real>2440</real>
 			<key>ypos</key>
 			<real>655</real>
 		</dict>
@@ -5567,16 +5801,25 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>2180</real>
+			<real>2320</real>
 			<key>ypos</key>
 			<real>445</real>
 		</dict>
 		<key>FA05FE88-6158-4066-B7EA-ACD9D8D3AD17</key>
 		<dict>
 			<key>xpos</key>
-			<real>3150</real>
+			<real>3290</real>
 			<key>ypos</key>
 			<real>65</real>
+		</dict>
+		<key>FAD46A54-2688-4773-83EB-5651399A279E</key>
+		<dict>
+			<key>note</key>
+			<string>Is valid snapshot?</string>
+			<key>xpos</key>
+			<real>1945</real>
+			<key>ypos</key>
+			<real>145</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -5626,6 +5869,27 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<string>slider</string>
 			<key>variable</key>
 			<string>snapshot_tolerance</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>120</string>
+				<key>placeholder</key>
+				<string>120</string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>How long (in seconds) to wait for requests (to Internet Archive) to resolve. Note that this is per request, not the total wait time across the whole workflow.</string>
+			<key>label</key>
+			<string>Maximum Wait for Requests</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>request_timeout</string>
 		</dict>
 		<dict>
 			<key>config</key>
