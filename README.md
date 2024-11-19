@@ -27,7 +27,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 - ✅ Error code detection with appropriate notifications
 - ✅ Passing is the URL is optional
 - 🚧 Configurable keyword
-- "Always on" logging (configurable and off by default)
+- 🚧 "Always on" logging (configurable and off by default)
 - Prompt to notify the developer when there is an unexpected error
 - Skip creating a new archive if there is already a snapshot within the last X minutes (configurable with override option)
 
