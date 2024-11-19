@@ -6599,7 +6599,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.1.5</string>
+	<string>0.2.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/Jython1415/alfred-archive-page</string>
 </dict>
