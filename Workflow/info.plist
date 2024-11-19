@@ -2166,6 +2166,14 @@
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>01EE9E8A-EB7D-47CA-8ADE-104A4ABE6DBE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
 			<key>config</key>
 			<dict>
 				<key>autopaste</key>
@@ -2183,14 +2191,6 @@
 			<string>32B69491-AAE7-4CE2-9CA7-D4089BAD2818</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
-			<key>uid</key>
-			<string>01EE9E8A-EB7D-47CA-8ADE-104A4ABE6DBE</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>type</key>
@@ -3435,7 +3435,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>938E779E-3EAD-45D5-9692-5B5E619DE9BD</string>
+			<string>0A748427-2073-4A66-9E44-9129ACA78242</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -3467,7 +3467,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>0A748427-2073-4A66-9E44-9129ACA78242</string>
+			<string>938E779E-3EAD-45D5-9692-5B5E619DE9BD</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -3592,7 +3592,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.output.writefile</string>
 			<key>uid</key>
-			<string>E5016032-ACB0-496E-A1DB-54270EE1C6E8</string>
+			<string>D85F45F9-408A-41F2-8891-82586C0BA01E</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -3619,7 +3619,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.output.writefile</string>
 			<key>uid</key>
-			<string>D85F45F9-408A-41F2-8891-82586C0BA01E</string>
+			<string>E5016032-ACB0-496E-A1DB-54270EE1C6E8</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
