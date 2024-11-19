@@ -14,6 +14,17 @@ Archives the frontmost browser tab using Internet Archive's Wayback Machine. Alt
 - <kbd>⌘</kbd><kbd>↩&#xFE0E;</kbd> Open the Wayback Machine website for archiving. No automatic copy to clipboard.
 - <kbd>⌥</kbd><kbd>↩&#xFE0E;</kbd> Copy the resulting URL in markdown format: `[archive](<URL>)`
 
+## Settings
+
+- **Keyword**
+  - Set this to whatever is most convenient for you
+- **Snapshot Tolerance**
+  - This determines how old an existing snapshot has to be for the workflow to create a new snaptshot
+- **Maximum Wait for Requests**
+  - Stops the workflow from getting stuck while waiting for a response
+- **Always On Logging?**
+  - Turn on logs in the workflow data folder
+
 ## Feedback
 
 Please provide feedback in [the dedicated topic on the Alfred "Share Your Workflows" forum](https://www.alfredforum.com/forum/3-share-your-workflows/).
