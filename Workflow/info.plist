@@ -5291,8 +5291,9 @@ FILL IN THIS TEMPLATE BEFORE POSTING</string>
 Archives the frontmost browser tab using Internet Archive's Wayback Machine. Alternatively, you can pass in a URL as an argument, or perform the action from Alfred clipboard history with the Universal Action.
 
 - &lt;kbd&gt;↩&amp;#xFE0E;&lt;/kbd&gt; Archive and copy the archive URL to clipboard.
-- &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&amp;#xFE0E;&lt;/kbd&gt; Open the Wayback Machine website for archiving. No automatic copy to clipboard.
+- &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&amp;#xFE0E;&lt;/kbd&gt; Skip the check for existing snapshots. Directly request to create a new one.
 - &lt;kbd&gt;⌥&lt;/kbd&gt;&lt;kbd&gt;↩&amp;#xFE0E;&lt;/kbd&gt; Copy the resulting URL in markdown format: `[archive](&lt;URL&gt;)`
+- &lt;kbd&gt;⌃&lt;/kbd&gt;&lt;kbd&gt;↩&amp;#xFE0E;&lt;/kbd&gt; Open the Wayback Machine website for archiving. No automatic copy to clipboard.
 
 ## Settings
 
