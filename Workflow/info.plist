@@ -1588,6 +1588,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>E2A2A1F7-4F36-4DDA-A5B3-C6300ED1811F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2BC44B43-52D6-4FDF-AC47-6FB7A4BDE083</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>E7896DC1-18B2-4955-A368-29AB5921F1B9</key>
 		<array>
 			<dict>
@@ -1688,7 +1701,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>82A34D17-2FA9-4CD6-BAA2-80945CBF303E</string>
+				<string>E2A2A1F7-4F36-4DDA-A5B3-C6300ED1811F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1986,10 +1999,19 @@
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{var:snapshot_url}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
+			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>82A34D17-2FA9-4CD6-BAA2-80945CBF303E</string>
+			<string>E2A2A1F7-4F36-4DDA-A5B3-C6300ED1811F</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2419,17 +2441,8 @@ fi</string>
 			<integer>1</integer>
 		</dict>
 		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{var:snapshot_url}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
+			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
 			<string>463ECDE9-04E4-4D63-9D1B-615A6C814C88</string>
 			<key>version</key>
@@ -5068,13 +5081,6 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>ypos</key>
 			<real>565</real>
 		</dict>
-		<key>82A34D17-2FA9-4CD6-BAA2-80945CBF303E</key>
-		<dict>
-			<key>xpos</key>
-			<real>3230</real>
-			<key>ypos</key>
-			<real>135</real>
-		</dict>
 		<key>84731D13-8E91-4FA8-BA9A-5A0FEA8ED416</key>
 		<dict>
 			<key>colorindex</key>
@@ -5482,6 +5488,13 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<real>3020</real>
 			<key>ypos</key>
 			<real>645</real>
+		</dict>
+		<key>E2A2A1F7-4F36-4DDA-A5B3-C6300ED1811F</key>
+		<dict>
+			<key>xpos</key>
+			<real>3230</real>
+			<key>ypos</key>
+			<real>135</real>
 		</dict>
 		<key>E5016032-ACB0-496E-A1DB-54270EE1C6E8</key>
 		<dict>
