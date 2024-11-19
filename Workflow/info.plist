@@ -167,6 +167,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>2656F3B3-B288-43B7-82CA-ECC8782008BA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>747073ED-7451-415A-AE11-9B21DF602E95</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>28798E41-F413-4714-885B-AED3EAA72460</key>
 		<array>
 			<dict>
@@ -468,6 +481,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>747073ED-7451-415A-AE11-9B21DF602E95</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D7E47840-31EF-4A91-8506-4E4DA390F9DF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>84731D13-8E91-4FA8-BA9A-5A0FEA8ED416</key>
 		<array>
 			<dict>
@@ -621,6 +647,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>B406C83D-84DB-45C2-93FE-E139A2AB2F40</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2656F3B3-B288-43B7-82CA-ECC8782008BA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>B740643E-06AA-4156-8CCE-3D59677A2688</key>
 		<array>
 			<dict>
@@ -730,6 +769,21 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D7E47840-31EF-4A91-8506-4E4DA390F9DF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8CC5F7DC-E53C-4165-A1E1-0F2B9A65FEA6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>98E68395-2F21-4774-B833-3F17967E038D</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -930,6 +984,33 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>adduuid</key>
+				<false/>
+				<key>allowemptyfiles</key>
+				<true/>
+				<key>createintermediatefolders</key>
+				<false/>
+				<key>filename</key>
+				<string>log.txt</string>
+				<key>filetext</key>
+				<string>[{date} - {time}] {query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>relativepathmode</key>
+				<integer>0</integer>
+				<key>type</key>
+				<integer>3</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.writefile</string>
+			<key>uid</key>
+			<string>8CC5F7DC-E53C-4165-A1E1-0F2B9A65FEA6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>acceptsfiles</key>
 				<false/>
 				<key>acceptsmulti</key>
@@ -1016,6 +1097,72 @@
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>B0E82D33-B6B2-40B0-A0E2-574C08EB0B12</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:always_on_logging}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>1</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>98E68395-2F21-4774-B833-3F17967E038D</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>D7E47840-31EF-4A91-8506-4E4DA390F9DF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>Opened the save URL in the browser</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>2656F3B3-B288-43B7-82CA-ECC8782008BA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>cleardebuggertext</key>
+				<false/>
+				<key>processoutputs</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.debug</string>
+			<key>uid</key>
+			<string>747073ED-7451-415A-AE11-9B21DF602E95</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2408,6 +2555,15 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>ypos</key>
 			<real>735</real>
 		</dict>
+		<key>2656F3B3-B288-43B7-82CA-ECC8782008BA</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>1290</real>
+			<key>ypos</key>
+			<real>95</real>
+		</dict>
 		<key>28798E41-F413-4714-885B-AED3EAA72460</key>
 		<dict>
 			<key>xpos</key>
@@ -2577,6 +2733,15 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>ypos</key>
 			<real>165</real>
 		</dict>
+		<key>747073ED-7451-415A-AE11-9B21DF602E95</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>1350</real>
+			<key>ypos</key>
+			<real>95</real>
+		</dict>
 		<key>75C04A0E-5126-427D-9108-3955FE023A97</key>
 		<dict>
 			<key>colorindex</key>
@@ -2619,6 +2784,15 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<real>1150</real>
 			<key>ypos</key>
 			<real>735</real>
+		</dict>
+		<key>8CC5F7DC-E53C-4165-A1E1-0F2B9A65FEA6</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>1470</real>
+			<key>ypos</key>
+			<real>65</real>
 		</dict>
 		<key>91631076-6C4B-44AB-B380-A251C5E073B7</key>
 		<dict>
@@ -2755,6 +2929,15 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<real>1030</real>
 			<key>ypos</key>
 			<real>885</real>
+		</dict>
+		<key>D7E47840-31EF-4A91-8506-4E4DA390F9DF</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>1410</real>
+			<key>ypos</key>
+			<real>95</real>
 		</dict>
 		<key>DC2FC25D-B5AA-4ECD-9E46-FE25042532DB</key>
 		<dict>
