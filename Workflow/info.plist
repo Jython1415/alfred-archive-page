@@ -572,7 +572,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>DFC44D3F-AF49-4C38-AF8E-6488F6D91721</string>
+				<string>67843F62-8D26-4D3F-9C7A-B7E23854DB84</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -881,6 +881,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>67843F62-8D26-4D3F-9C7A-B7E23854DB84</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DFC44D3F-AF49-4C38-AF8E-6488F6D91721</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>6A2ADA88-D137-4BA5-BFDF-0FA1CAA54228</key>
 		<array>
 			<dict>
@@ -1050,7 +1063,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>AC665D43-6C2A-4B65-A775-E79E5DBC5348</string>
+				<string>BA058E62-4796-4038-9AE7-05F8F4793A2B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1386,6 +1399,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>84731D13-8E91-4FA8-BA9A-5A0FEA8ED416</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BA058E62-4796-4038-9AE7-05F8F4793A2B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AC665D43-6C2A-4B65-A775-E79E5DBC5348</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -3971,6 +3997,14 @@ echo -n $execution_count</string>
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>BA058E62-4796-4038-9AE7-05F8F4793A2B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
 			<key>config</key>
 			<dict>
 				<key>argument</key>
@@ -4615,6 +4649,14 @@ echo -n $execution_count</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
+			<string>67843F62-8D26-4D3F-9C7A-B7E23854DB84</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
 			<string>9BB20102-856F-4B96-90FA-A2DE68177245</string>
 			<key>version</key>
 			<integer>1</integer>
@@ -5095,6 +5137,17 @@ Archives the frontmost browser tab using Internet Archive's Wayback Machine. Alt
 - &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&amp;#xFE0E;&lt;/kbd&gt; Open the Wayback Machine website for archiving. No automatic copy to clipboard.
 - &lt;kbd&gt;⌥&lt;/kbd&gt;&lt;kbd&gt;↩&amp;#xFE0E;&lt;/kbd&gt; Copy the resulting URL in markdown format: `[archive](&lt;URL&gt;)`
 
+## Settings
+
+- **Keyword**
+  - Set this to whatever is most convenient for you
+- **Snapshot Tolerance**
+  - This determines how old an existing snapshot has to be for the workflow to create a new snaptshot
+- **Maximum Wait for Requests**
+  - Stops the workflow from getting stuck while waiting for a response
+- **Always On Logging?**
+  - Turn on logs in the workflow data folder
+
 ## Feedback
 
 Please provide feedback in [the dedicated topic on the Alfred "Share Your Workflows" forum](https://www.alfredforum.com/forum/3-share-your-workflows/).</string>
@@ -5112,7 +5165,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Create new snapshot</string>
 			<key>xpos</key>
-			<real>1450</real>
+			<real>1460</real>
 			<key>ypos</key>
 			<real>65</real>
 		</dict>
@@ -5570,6 +5623,15 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>ypos</key>
 			<real>215</real>
 		</dict>
+		<key>67843F62-8D26-4D3F-9C7A-B7E23854DB84</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>1330</real>
+			<key>ypos</key>
+			<real>685</real>
+		</dict>
 		<key>692E59B2-C927-4523-8A93-4A2F5EAFE4EB</key>
 		<dict>
 			<key>xpos</key>
@@ -5898,6 +5960,15 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 		<dict>
 			<key>xpos</key>
 			<real>630</real>
+			<key>ypos</key>
+			<real>565</real>
+		</dict>
+		<key>BA058E62-4796-4038-9AE7-05F8F4793A2B</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>1460</real>
 			<key>ypos</key>
 			<real>565</real>
 		</dict>
