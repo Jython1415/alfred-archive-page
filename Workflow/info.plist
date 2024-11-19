@@ -44,6 +44,29 @@
 				<false/>
 			</dict>
 		</array>
+		<key>04DEF9EA-A37E-42BF-B3F2-3336AA6A5E0D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B3188055-2AB0-46BF-8839-E35CF6983D4E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>50D1E738-8688-4B59-93B6-C2EEC559E199</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>0686D024-C9E7-458C-8DE8-51341DB82E2E</key>
 		<array>
 			<dict>
@@ -154,6 +177,67 @@
 				<false/>
 			</dict>
 		</array>
+		<key>1CC3B9A5-664D-4DA7-9421-E5491A7C14D6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AEEA4683-BAD9-4A31-B31B-7A391CDF74DC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>DCACFD29-6669-4AB1-A97B-92BDDF86ED77</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>21630F99-3689-445F-BCEB-627EA5873275</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>964AEFAE-AEA4-474A-869C-D92D66F6803D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>4204AE65-AA84-442B-A6BE-CF9348EF9175</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>38AAAE9D-FBC8-401A-8474-C4EE1C06DFAB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>223CB1B6-0337-4DF6-B70D-583CC72A0334</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>21630F99-3689-445F-BCEB-627EA5873275</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>2656F3B3-B288-43B7-82CA-ECC8782008BA</key>
 		<array>
 			<dict>
@@ -235,6 +319,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>9F62B704-FF29-4B7A-ABCE-D6E4E864E487</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>38AAAE9D-FBC8-401A-8474-C4EE1C06DFAB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>04DEF9EA-A37E-42BF-B3F2-3336AA6A5E0D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -380,6 +477,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>4E36F139-C089-4B88-9FA9-C48547FBE7E2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BF369C25-EC7B-4197-8321-E899FE9C3C25</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>514103DE-37F2-42BF-864B-47501DF36B06</key>
 		<array>
 			<dict>
@@ -434,7 +544,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>AEEA4683-BAD9-4A31-B31B-7A391CDF74DC</string>
+				<string>1CC3B9A5-664D-4DA7-9421-E5491A7C14D6</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -522,11 +632,50 @@
 				<false/>
 			</dict>
 		</array>
+		<key>964AEFAE-AEA4-474A-869C-D92D66F6803D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4E36F139-C089-4B88-9FA9-C48547FBE7E2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>977BD828-87B3-4F4D-867F-EA2523D4B14D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E8EE7CC9-830F-4F5C-9B08-B1760B95753C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>9BB20102-856F-4B96-90FA-A2DE68177245</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>3D565BA3-7A1F-4D2D-AB13-B086B7F5B35E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9C6B477E-C34D-40BA-BBC7-BEC4A30BF228</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D57C324B-1BD1-4E74-B25A-6F7E3D0C0D4E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -686,6 +835,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>BF369C25-EC7B-4197-8321-E899FE9C3C25</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>04DEF9EA-A37E-42BF-B3F2-3336AA6A5E0D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C11C4571-75F4-40E1-BB41-D2E058002538</key>
 		<array>
 			<dict>
@@ -760,6 +922,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>D57C324B-1BD1-4E74-B25A-6F7E3D0C0D4E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>223CB1B6-0337-4DF6-B70D-583CC72A0334</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>D7E47840-31EF-4A91-8506-4E4DA390F9DF</key>
 		<array>
 			<dict>
@@ -780,6 +955,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>0A08E334-197C-4CA8-9AF1-55B71C2634A0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DCACFD29-6669-4AB1-A97B-92BDDF86ED77</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>977BD828-87B3-4F4D-867F-EA2523D4B14D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -885,6 +1073,33 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E8EE7CC9-830F-4F5C-9B08-B1760B95753C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8D346847-EA2A-4B2E-A1D0-B068EA1614F4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>E2B8DF73-95C1-4945-9CA3-87C969F03CE4</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>9C6B477E-C34D-40BA-BBC7-BEC4A30BF228</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>E2B8DF73-95C1-4945-9CA3-87C969F03CE4</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -1617,6 +1832,14 @@
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>1CC3B9A5-664D-4DA7-9421-E5491A7C14D6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
 			<key>config</key>
 			<dict>
 				<key>adduuid</key>
@@ -1640,6 +1863,27 @@
 			<string>alfred.workflow.output.writefile</string>
 			<key>uid</key>
 			<string>3C6A1AF3-BA92-407C-8D62-BFDD447D81F4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<true/>
+				<key>skipvarencode</key>
+				<true/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://www.alfredforum.com/topic/22513-archive-page-save-webpages-on-internet-archives-wayback-machine</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>8D346847-EA2A-4B2E-A1D0-B068EA1614F4</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1805,6 +2049,237 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>cat &lt;&lt; EOB
+{"items": [
+
+	{
+		"title": "Yes",
+		"subtitle": "Open the forum and put a error report template in your clipboard",
+		"arg": "1",
+		"autocomplete": "Yes"
+	},
+
+    {
+		"title": "No",
+		"subtitle": "You can rerun with the debugger open or check the log file for more details",
+		"arg": "0",
+		"autocomplete": "No"
+	}
+]}
+EOB</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>{var:script_filter_title}</string>
+				<key>type</key>
+				<integer>11</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>977BD828-87B3-4F4D-867F-EA2523D4B14D</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>The error reporting template has been copied to your clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>B3188055-2AB0-46BF-8839-E35CF6983D4E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict/>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/files-and-folders/file.read</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>4E36F139-C089-4B88-9FA9-C48547FBE7E2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>1</string>
+						<key>outputlabel</key>
+						<string>Report error</string>
+						<key>uid</key>
+						<string>E2B8DF73-95C1-4945-9CA3-87C969F03CE4</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>Do nothing</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>E8EE7CC9-830F-4F5C-9B08-B1760B95753C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>Alfred Debugger Output:
+
+
+*Add output from the debugger here if you can get it*
+
+
+"Always On" Logs:
+
+
+REVIEW THESE LOGS BEFORE POSTING; REMOVE SENSITIVE INFORMATION
+
+
+{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>BF369C25-EC7B-4197-8321-E899FE9C3C25</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>Unknown error; Report to forum?</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>script_filter_title</key>
+					<string>Unknown error; Report to forum?</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>DCACFD29-6669-4AB1-A97B-92BDDF86ED77</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{var:log_file_path}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>964AEFAE-AEA4-474A-869C-D92D66F6803D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict/>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/files-and-folders/path.exists</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>223CB1B6-0337-4DF6-B70D-583CC72A0334</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict>
+					<key>target_path</key>
+					<string>~/Library/Application Support/Alfred/Workflow Data/com.joshua.shew.archive.page/log.txt</string>
+				</dict>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/files-and-folders/path.expand-tilde</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>9C6B477E-C34D-40BA-BBC7-BEC4A30BF228</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>adduuid</key>
 				<false/>
 				<key>allowemptyfiles</key>
@@ -1853,6 +2328,38 @@
 			<string>alfred.workflow.output.writefile</string>
 			<key>uid</key>
 			<string>E5016032-ACB0-496E-A1DB-54270EE1C6E8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>true</string>
+						<key>outputlabel</key>
+						<string>Logs exist</string>
+						<key>uid</key>
+						<string>4204AE65-AA84-442B-A6BE-CF9348EF9175</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>No logs</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>21630F99-3689-445F-BCEB-627EA5873275</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1976,6 +2483,34 @@
 			<dict>
 				<key>argument</key>
 				<string>{query}</string>
+				<key>passthroughargument</key>
+				<true/>
+				<key>variables</key>
+				<dict>
+					<key>log_file_path</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>D57C324B-1BD1-4E74-B25A-6F7E3D0C0D4E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>04DEF9EA-A37E-42BF-B3F2-3336AA6A5E0D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
 				<key>cleardebuggertext</key>
 				<false/>
 				<key>processoutputs</key>
@@ -1991,27 +2526,56 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>adduuid</key>
+				<key>autopaste</key>
 				<false/>
-				<key>allowemptyfiles</key>
-				<true/>
-				<key>createintermediatefolders</key>
-				<false/>
-				<key>filename</key>
-				<string>log.txt</string>
-				<key>filetext</key>
-				<string>[{date} - {time}] {query}</string>
+				<key>clipboardtext</key>
+				<string>FILL IN THIS TEMPLATE BEFORE POSTING
+
+
+I ran into an unknown error while using your workflow.
+
+
+macOS version:
+Alfred version:
+Workflow version:
+
+
+Additional context:
+
+
+{query}
+
+
+FILL IN THIS TEMPLATE BEFORE POSTING</string>
 				<key>ignoredynamicplaceholders</key>
 				<false/>
-				<key>relativepathmode</key>
-				<integer>0</integer>
-				<key>type</key>
-				<integer>3</integer>
+				<key>transient</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.writefile</string>
+			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>8B54600A-93C5-4271-87B3-23894A7D2899</string>
+			<string>50D1E738-8688-4B59-93B6-C2EEC559E199</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>Alfred Debugger Output:
+
+
+*Add output from the debugger here if you can get it*</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>38AAAE9D-FBC8-401A-8474-C4EE1C06DFAB</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2039,6 +2603,33 @@
 			<string>alfred.workflow.output.writefile</string>
 			<key>uid</key>
 			<string>224070CE-2872-4F31-BE63-3D097849BF3A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>adduuid</key>
+				<false/>
+				<key>allowemptyfiles</key>
+				<true/>
+				<key>createintermediatefolders</key>
+				<false/>
+				<key>filename</key>
+				<string>log.txt</string>
+				<key>filetext</key>
+				<string>[{date} - {time}] {query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>relativepathmode</key>
+				<integer>0</integer>
+				<key>type</key>
+				<integer>3</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.writefile</string>
+			<key>uid</key>
+			<string>8B54600A-93C5-4271-87B3-23894A7D2899</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2463,6 +3054,13 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>ypos</key>
 			<real>190</real>
 		</dict>
+		<key>04DEF9EA-A37E-42BF-B3F2-3336AA6A5E0D</key>
+		<dict>
+			<key>xpos</key>
+			<real>3145</real>
+			<key>ypos</key>
+			<real>645</real>
+		</dict>
 		<key>0686D024-C9E7-458C-8DE8-51341DB82E2E</key>
 		<dict>
 			<key>xpos</key>
@@ -2517,6 +3115,27 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<real>920</real>
 			<key>ypos</key>
 			<real>645</real>
+		</dict>
+		<key>1CC3B9A5-664D-4DA7-9421-E5491A7C14D6</key>
+		<dict>
+			<key>xpos</key>
+			<real>1960</real>
+			<key>ypos</key>
+			<real>465</real>
+		</dict>
+		<key>21630F99-3689-445F-BCEB-627EA5873275</key>
+		<dict>
+			<key>xpos</key>
+			<real>2760</real>
+			<key>ypos</key>
+			<real>635</real>
+		</dict>
+		<key>223CB1B6-0337-4DF6-B70D-583CC72A0334</key>
+		<dict>
+			<key>xpos</key>
+			<real>2615</real>
+			<key>ypos</key>
+			<real>615</real>
 		</dict>
 		<key>224070CE-2872-4F31-BE63-3D097849BF3A</key>
 		<dict>
@@ -2574,6 +3193,13 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<real>980</real>
 			<key>ypos</key>
 			<real>525</real>
+		</dict>
+		<key>38AAAE9D-FBC8-401A-8474-C4EE1C06DFAB</key>
+		<dict>
+			<key>xpos</key>
+			<real>2970</real>
+			<key>ypos</key>
+			<real>675</real>
 		</dict>
 		<key>3941584D-FB4E-4290-968E-CBA149C61D51</key>
 		<dict>
@@ -2658,6 +3284,20 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<real>1500</real>
 			<key>ypos</key>
 			<real>525</real>
+		</dict>
+		<key>4E36F139-C089-4B88-9FA9-C48547FBE7E2</key>
+		<dict>
+			<key>xpos</key>
+			<real>2930</real>
+			<key>ypos</key>
+			<real>555</real>
+		</dict>
+		<key>50D1E738-8688-4B59-93B6-C2EEC559E199</key>
+		<dict>
+			<key>xpos</key>
+			<real>3215</real>
+			<key>ypos</key>
+			<real>675</real>
 		</dict>
 		<key>514103DE-37F2-42BF-864B-47501DF36B06</key>
 		<dict>
@@ -2766,6 +3406,13 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>ypos</key>
 			<real>65</real>
 		</dict>
+		<key>8D346847-EA2A-4B2E-A1D0-B068EA1614F4</key>
+		<dict>
+			<key>xpos</key>
+			<real>2405</real>
+			<key>ypos</key>
+			<real>495</real>
+		</dict>
 		<key>91631076-6C4B-44AB-B380-A251C5E073B7</key>
 		<dict>
 			<key>colorindex</key>
@@ -2775,6 +3422,20 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>ypos</key>
 			<real>525</real>
 		</dict>
+		<key>964AEFAE-AEA4-474A-869C-D92D66F6803D</key>
+		<dict>
+			<key>xpos</key>
+			<real>2865</real>
+			<key>ypos</key>
+			<real>585</real>
+		</dict>
+		<key>977BD828-87B3-4F4D-867F-EA2523D4B14D</key>
+		<dict>
+			<key>xpos</key>
+			<real>2120</real>
+			<key>ypos</key>
+			<real>555</real>
+		</dict>
 		<key>9BB20102-856F-4B96-90FA-A2DE68177245</key>
 		<dict>
 			<key>colorindex</key>
@@ -2783,6 +3444,13 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<real>720</real>
 			<key>ypos</key>
 			<real>885</real>
+		</dict>
+		<key>9C6B477E-C34D-40BA-BBC7-BEC4A30BF228</key>
+		<dict>
+			<key>xpos</key>
+			<real>2405</real>
+			<key>ypos</key>
+			<real>615</real>
 		</dict>
 		<key>9F62B704-FF29-4B7A-ABCE-D6E4E864E487</key>
 		<dict>
@@ -2803,7 +3471,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 		<key>AEEA4683-BAD9-4A31-B31B-7A391CDF74DC</key>
 		<dict>
 			<key>xpos</key>
-			<real>1960</real>
+			<real>2060</real>
 			<key>ypos</key>
 			<real>435</real>
 		</dict>
@@ -2829,6 +3497,13 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<real>980</real>
 			<key>ypos</key>
 			<real>765</real>
+		</dict>
+		<key>B3188055-2AB0-46BF-8839-E35CF6983D4E</key>
+		<dict>
+			<key>xpos</key>
+			<real>3215</real>
+			<key>ypos</key>
+			<real>555</real>
 		</dict>
 		<key>B406C83D-84DB-45C2-93FE-E139A2AB2F40</key>
 		<dict>
@@ -2863,6 +3538,13 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<real>1500</real>
 			<key>ypos</key>
 			<real>645</real>
+		</dict>
+		<key>BF369C25-EC7B-4197-8321-E899FE9C3C25</key>
+		<dict>
+			<key>xpos</key>
+			<real>3075</real>
+			<key>ypos</key>
+			<real>585</real>
 		</dict>
 		<key>C11C4571-75F4-40E1-BB41-D2E058002538</key>
 		<dict>
@@ -2902,6 +3584,13 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>ypos</key>
 			<real>885</real>
 		</dict>
+		<key>D57C324B-1BD1-4E74-B25A-6F7E3D0C0D4E</key>
+		<dict>
+			<key>xpos</key>
+			<real>2550</real>
+			<key>ypos</key>
+			<real>645</real>
+		</dict>
 		<key>D7E47840-31EF-4A91-8506-4E4DA390F9DF</key>
 		<dict>
 			<key>colorindex</key>
@@ -2919,6 +3608,13 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<real>1560</real>
 			<key>ypos</key>
 			<real>765</real>
+		</dict>
+		<key>DCACFD29-6669-4AB1-A97B-92BDDF86ED77</key>
+		<dict>
+			<key>xpos</key>
+			<real>2060</real>
+			<key>ypos</key>
+			<real>585</real>
 		</dict>
 		<key>DE9CC0C4-98C1-4F76-BFC5-E4A327EAC219</key>
 		<dict>
@@ -2967,6 +3663,13 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<real>1810</real>
 			<key>ypos</key>
 			<real>135</real>
+		</dict>
+		<key>E8EE7CC9-830F-4F5C-9B08-B1760B95753C</key>
+		<dict>
+			<key>xpos</key>
+			<real>2260</real>
+			<key>ypos</key>
+			<real>575</real>
 		</dict>
 		<key>ECF1E16E-90EA-4663-872D-B0C206E0E54E</key>
 		<dict>
