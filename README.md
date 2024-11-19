@@ -43,9 +43,9 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 - ✅ Prompt to notify the developer when there is an unexpected error
 - ✅ Skip creating a new archive if there is already a snapshot within the configured timeframe
 - External triggers for key functionalities
-- Helpful and configurable sounds
-- A "search" URL is returned instantly while the snapshot is completed in the background
 - Failed snapshot requests are saved for retrying
+- A "search" URL is returned instantly while the snapshot is completed in the background
+- Helpful and configurable sounds
 
 ## Acknowledgements
 
