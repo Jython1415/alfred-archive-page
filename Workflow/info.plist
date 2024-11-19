@@ -3018,9 +3018,9 @@ temp_file=$(/usr/bin/mktemp /tmp/temp_log.XXXXXX)
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
-				<string>Please try again later</string>
+				<string>The Wayback Machine limits archives to 5 per day per link. Please try archiving this link tomorrow.</string>
 				<key>title</key>
-				<string>Too many requests</string>
+				<string>Too many requests for URL</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
