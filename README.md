@@ -42,11 +42,10 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 - ✅ "Always on" logging (configurable and off by default)
 - ✅ Prompt to notify the developer when there is an unexpected error
 - ✅ Skip creating a new archive if there is already a snapshot within the configured timeframe
-
-### Under Consideration
-
-- Return the URL instantly with the archiving being completed in the background (must be reliable)
-- Long-term fallback option that waits until Internet Archive can handle the link
+- External triggers for key functionalities
+- Failed snapshot requests are saved for retrying
+- A "search" URL is returned instantly while the snapshot is completed in the background
+- Helpful and configurable sounds
 
 ## Acknowledgements
 
