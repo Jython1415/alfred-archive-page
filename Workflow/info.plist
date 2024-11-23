@@ -122,6 +122,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>14FC800F-2F6F-4C4D-84F9-86C841A588C9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>1283D3AB-7039-46A2-872D-F79432E4A742</key>
 		<array>
@@ -297,6 +307,16 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>57B8B0C0-26BB-4830-9DCF-4EE9628EAEA0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>8F5E0C3A-73BF-42FF-8D00-A1870FC9777A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1079,23 +1099,26 @@
 	<key>objects</key>
 	<array>
 		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsfiles</key>
-				<false/>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>acceptstext</key>
-				<false/>
-				<key>acceptsurls</key>
-				<true/>
-				<key>name</key>
-				<string>Archive Website</string>
-			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.universalaction</string>
+			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
-			<string>C11C4571-75F4-40E1-BB41-D2E058002538</string>
+			<string>01EE9E8A-EB7D-47CA-8ADE-104A4ABE6DBE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>9E8B6FA8-4A82-41D9-AF10-D3E9E0E79B15</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>9879AB16-9774-4C2E-9CE5-35C4F754EB11</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1104,32 +1127,6 @@
 			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
 			<string>FA05FE88-6158-4066-B7EA-ACD9D8D3AD17</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>tasksettings</key>
-				<dict>
-					<key>allow_empty</key>
-					<true/>
-				</dict>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.extras/web-browsers/frontmost-browser/frontmost.tabs.current</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
-			<key>uid</key>
-			<string>F3D0A9DE-D2D0-424D-8086-CE80104F31A4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
-			<key>uid</key>
-			<string>01EE9E8A-EB7D-47CA-8ADE-104A4ABE6DBE</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1157,27 +1154,6 @@
 			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
 			<string>28B67431-BADA-4D7B-88AE-ED1B3DF3E4E4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>skipqueryencode</key>
-				<false/>
-				<key>skipvarencode</key>
-				<false/>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{var:save_url}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>B406C83D-84DB-45C2-93FE-E139A2AB2F40</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1211,18 +1187,62 @@
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<false/>
+				<key>acceptsurls</key>
+				<true/>
+				<key>name</key>
+				<string>Archive Website</string>
+			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
+			<string>alfred.workflow.trigger.universalaction</string>
 			<key>uid</key>
-			<string>9879AB16-9774-4C2E-9CE5-35C4F754EB11</string>
+			<string>C11C4571-75F4-40E1-BB41-D2E058002538</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{var:save_url}</string>
+			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
+			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>9E8B6FA8-4A82-41D9-AF10-D3E9E0E79B15</string>
+			<string>B406C83D-84DB-45C2-93FE-E139A2AB2F40</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict>
+					<key>allow_empty</key>
+					<true/>
+				</dict>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.extras/web-browsers/frontmost-browser/frontmost.tabs.current</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>F3D0A9DE-D2D0-424D-8086-CE80104F31A4</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1320,24 +1340,102 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>resposne = $(/usr/bin/curl -s --max-time "${request_timeout}" "${1}")
-
-if [ $? -eq 28 ]; then
-    echo -n 28
-else
-    echo -n "${response}"
-fi</string>
+				<string></string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>src/check_if_valid_snapshot.sh</string>
 				<key>type</key>
-				<integer>11</integer>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>FAD46A54-2688-4773-83EB-5651399A279E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>src/request_snapshot_availability.sh</string>
+				<key>type</key>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>3A219FF3-DDC7-4ADA-81EB-C857BED23AAB</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict/>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/text-processing/text.encode.percent</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>3AF9C32F-4456-4E5F-8486-4D9241942948</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>src/calculate_snapshot_timing.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>371E304D-2980-4543-929B-B908AB3F4B5E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>src/parse_snapshot_output.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>6A2ADA88-D137-4BA5-BFDF-0FA1CAA54228</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -1374,117 +1472,42 @@ fi</string>
 			<integer>1</integer>
 		</dict>
 		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string># Input timestamp (YYYYMMDDHHMMSS)
-input_timestamp="${1}"
-
-# Convert the input timestamp to seconds since epoch using UTC
-input_epoch=$(TZ=UTC date -j -f "%Y%m%d%H%M%S" "${input_timestamp}" "+%s")
-
-# Get the current time in seconds since epoch (UTC)
-current_epoch=$(TZ=UTC date "+%s")
-
-seconds_since=$((current_epoch - input_epoch))
-
-echo -n "${seconds_since}"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>11</integer>
-			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
-			<string>371E304D-2980-4543-929B-B908AB3F4B5E</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string># $1 is assume to be the snapshot tolerance in seconds
-if (( $1 &gt;= $seconds_since_snapshot )); then
-  echo -n 1
-else
-  echo -n 0
-fi</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>11</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>FAD46A54-2688-4773-83EB-5651399A279E</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>tasksettings</key>
-				<dict/>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.core/text-processing/text.encode.percent</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
-			<key>uid</key>
-			<string>3AF9C32F-4456-4E5F-8486-4D9241942948</string>
+			<string>00525244-6E05-4E3A-816B-13444679A564</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:open_wayback}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>true</string>
+						<key>outputlabel</key>
+						<string>Use website</string>
+						<key>uid</key>
+						<string>67B12539-267F-44A7-9B8B-216818287F22</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>Save in background</string>
+				<key>hideelse</key>
 				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string># Use jq to extract the URL and timestamp, separated by " | "
-result=$(echo "${1}" | jq -r '.archived_snapshots.closest | select(.available == true) | "\(.url) | \(.timestamp)"')
-
-if [ -z "$result" ]; then
-  echo -n 1
-else
-  echo -n "$result"
-fi</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>11</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>6A2ADA88-D137-4BA5-BFDF-0FA1CAA54228</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
-			<key>uid</key>
-			<string>00525244-6E05-4E3A-816B-13444679A564</string>
+			<string>DE9CC0C4-98C1-4F76-BFC5-E4A327EAC219</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1501,22 +1524,54 @@ fi</string>
 						<key>matchmode</key>
 						<integer>0</integer>
 						<key>matchstring</key>
-						<string>28</string>
+						<string></string>
 						<key>outputlabel</key>
-						<string>Timed out</string>
+						<string>No input</string>
 						<key>uid</key>
-						<string>445DE5B0-6C6B-4A0E-B011-CA86A0A6FAF6</string>
+						<string>00840390-2457-474A-A282-0AFD9CE48353</string>
 					</dict>
 				</array>
 				<key>elselabel</key>
-				<string>Got a response</string>
+				<string>Has input</string>
 				<key>hideelse</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>916F26BE-5C39-46D1-BAC2-66F46A899384</string>
+			<string>70EB7E1C-20D1-4B70-998B-A502BE805C3A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>1</string>
+						<key>outputlabel</key>
+						<string>Error</string>
+						<key>uid</key>
+						<string>04C66E55-DF8B-4432-BBAB-5FB0D3FDADA6</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>Output received</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>A298ABDF-E140-447E-8435-D673AB2B784B</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1565,86 +1620,63 @@ fi</string>
 						<key>matchmode</key>
 						<integer>0</integer>
 						<key>matchstring</key>
-						<string>1</string>
+						<string>28</string>
 						<key>outputlabel</key>
-						<string>Error</string>
+						<string>Timed out</string>
 						<key>uid</key>
-						<string>04C66E55-DF8B-4432-BBAB-5FB0D3FDADA6</string>
+						<string>445DE5B0-6C6B-4A0E-B011-CA86A0A6FAF6</string>
 					</dict>
 				</array>
 				<key>elselabel</key>
-				<string>Output received</string>
+				<string>Got a response</string>
 				<key>hideelse</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>A298ABDF-E140-447E-8435-D673AB2B784B</string>
+			<string>916F26BE-5C39-46D1-BAC2-66F46A899384</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>463ECDE9-04E4-4D63-9D1B-615A6C814C88</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string></string>
-						<key>outputlabel</key>
-						<string>No input</string>
-						<key>uid</key>
-						<string>00840390-2457-474A-A282-0AFD9CE48353</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>Has input</string>
-				<key>hideelse</key>
+				<key>argument</key>
+				<string>{var:save_url}</string>
+				<key>passthroughargument</key>
 				<false/>
+				<key>variables</key>
+				<dict/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
+			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>70EB7E1C-20D1-4B70-998B-A502BE805C3A</string>
+			<string>A660D27C-E4A0-4F57-879A-A72E86DAD017</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:open_wayback}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>true</string>
-						<key>outputlabel</key>
-						<string>Use website</string>
-						<key>uid</key>
-						<string>67B12539-267F-44A7-9B8B-216818287F22</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>Save in background</string>
-				<key>hideelse</key>
-				<false/>
-			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
+			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
-			<string>DE9CC0C4-98C1-4F76-BFC5-E4A327EAC219</string>
+			<string>4126405F-D560-410A-9188-8AEA623C7B69</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>63A6FE75-5B57-4FB8-B490-8C5824595B3D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1673,43 +1705,6 @@ fi</string>
 			<key>config</key>
 			<dict>
 				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>seconds_since_snapshot</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>AED0EFCC-BBB5-4EFB-B8CA-0CD94D351E7C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{var:response_url}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>399242CD-3558-40F0-8A85-34BA6165551C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
 				<string>https://archive.org/wayback/available?url={query}</string>
 				<key>passthroughargument</key>
 				<false/>
@@ -1723,35 +1718,6 @@ fi</string>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>D1EB575C-418E-45CC-B6A0-5B1211CAC9CF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
-			<key>uid</key>
-			<string>4126405F-D560-410A-9188-8AEA623C7B69</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>expression</key>
-				<string>{var:snapshot_tolerance} * 86400</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.expression</string>
-			<key>uid</key>
-			<string>0A65E1A0-ECF7-469F-BF83-1C6BDFD5793F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
-			<key>uid</key>
-			<string>463ECDE9-04E4-4D63-9D1B-615A6C814C88</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1780,6 +1746,36 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>expression</key>
+				<string>{var:snapshot_tolerance} * 86400</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.expression</string>
+			<key>uid</key>
+			<string>0A65E1A0-ECF7-469F-BF83-1C6BDFD5793F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{var:response_url}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>399242CD-3558-40F0-8A85-34BA6165551C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string>{query}</string>
 				<key>passthroughargument</key>
@@ -1798,27 +1794,22 @@ fi</string>
 			<integer>1</integer>
 		</dict>
 		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
-			<key>uid</key>
-			<string>402E69EA-3702-43D8-8584-2D039249E558</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
 			<key>config</key>
 			<dict>
 				<key>argument</key>
-				<string>{var:save_url}</string>
+				<string></string>
 				<key>passthroughargument</key>
 				<false/>
 				<key>variables</key>
-				<dict/>
+				<dict>
+					<key>seconds_since_snapshot</key>
+					<string>{query}</string>
+				</dict>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>A660D27C-E4A0-4F57-879A-A72E86DAD017</string>
+			<string>AED0EFCC-BBB5-4EFB-B8CA-0CD94D351E7C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1826,7 +1817,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
-			<string>63A6FE75-5B57-4FB8-B490-8C5824595B3D</string>
+			<string>402E69EA-3702-43D8-8584-2D039249E558</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1886,19 +1877,6 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.transform</string>
-			<key>uid</key>
-			<string>3DBFCECE-98BF-46F8-B734-C94784EBBA35</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string></string>
 				<key>passthroughargument</key>
@@ -1915,6 +1893,19 @@ fi</string>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>28798E41-F413-4714-885B-AED3EAA72460</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.transform</string>
+			<key>uid</key>
+			<string>3DBFCECE-98BF-46F8-B734-C94784EBBA35</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1947,26 +1938,15 @@ fi</string>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>68</integer>
+				<integer>0</integer>
 				<key>script</key>
-				<string>function run(argv) {
-  const query = argv[0];
-
-  const responseCodeMatch = query.match(/^HTTP\/\d+ (\d+)/m);
-  const responseCode = responseCodeMatch ? responseCodeMatch[1] : "error";
-
-  const locationMatch = query.match(/^location:\s*(.+)$/m);
-  const location = locationMatch ? locationMatch[1].trim() : "error";
-
-  // Combine response code and location value with delimiter
-  return `${responseCode} | ${location}`;
-}</string>
+				<string></string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>src/parse_save_output.js</string>
 				<key>type</key>
-				<integer>7</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -1983,19 +1963,13 @@ fi</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>response=$(/usr/bin/curl -I --max-time "${request_timeout}" "${1}")
-
-if [ $? -eq 28 ]; then
-    echo -n 28
-else
-    echo -n "${response}"
-fi</string>
+				<string></string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>src/make_save_request.sh</string>
 				<key>type</key>
-				<integer>11</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -2012,40 +1986,13 @@ fi</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>response="${http_response}"
-
-# Define the output format function
-output_format() {
-  echo "$1"  # known error? (0/1)
-  echo "$2"  # notification_title
-  echo "$3"  # notification_text
-}
-
-case $response in
-  404)
-    output_format 1 "Page not found (404)" \
-      "Please try again later"
-  429)
-    output_format 1 "Too many requests for URL" \
-      "The Wayback Machine limits archives to 5 per day per link. Please try archiving this link tomorrow."
-    ;;
-  520)
-    output_format 1 "Internet Archive returned an unexpected error" \
-      "Please try again later"
-    ;;
-  523)
-    output_format 1 "The page could not be reached for archiving" ""
-    ;;
-  *)
-    output_format 0 "" ""
-    ;;
-esac</string>
+				<string></string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>src/interpret_save_error.sh</string>
 				<key>type</key>
-				<integer>11</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -2053,6 +2000,23 @@ esac</string>
 			<string>10FED6F0-B7AB-4BB9-B27B-4D9CC8F77779</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>Error while parsing snapshot response</string>
+				<key>cleardebuggertext</key>
+				<false/>
+				<key>processoutputs</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.debug</string>
+			<key>uid</key>
+			<string>E5187285-B1E1-4A8F-AEF8-F652B74F47C4</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2074,17 +2038,32 @@ esac</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string>Error while parsing snapshot response</string>
-				<key>cleardebuggertext</key>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:known_error}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>1</string>
+						<key>outputlabel</key>
+						<string>Known error</string>
+						<key>uid</key>
+						<string>4356F5F8-770F-48D0-BC32-294F1C0383D7</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>Unknown error</string>
+				<key>hideelse</key>
 				<false/>
-				<key>processoutputs</key>
-				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.debug</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>E5187285-B1E1-4A8F-AEF8-F652B74F47C4</string>
+			<string>57B8B0C0-26BB-4830-9DCF-4EE9628EAEA0</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2155,38 +2134,6 @@ esac</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:known_error}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>1</string>
-						<key>outputlabel</key>
-						<string>Known error</string>
-						<key>uid</key>
-						<string>4356F5F8-770F-48D0-BC32-294F1C0383D7</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>Unknown error</string>
-				<key>hideelse</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>57B8B0C0-26BB-4830-9DCF-4EE9628EAEA0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string>{query}</string>
 				<key>passthroughargument</key>
@@ -2201,28 +2148,6 @@ esac</string>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>1283D3AB-7039-46A2-872D-F79432E4A742</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>delimiter</key>
-				<string>
-</string>
-				<key>discardemptyarguments</key>
-				<false/>
-				<key>outputas</key>
-				<integer>0</integer>
-				<key>trimarguments</key>
-				<true/>
-				<key>variableprefix</key>
-				<string>split</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.split</string>
-			<key>uid</key>
-			<string>EACEA8BC-9DBF-4F23-AAB7-1191660D8417</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2269,6 +2194,28 @@ esac</string>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>945E75C2-3BF0-41F8-BAE7-20FE96C56608</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>delimiter</key>
+				<string>
+</string>
+				<key>discardemptyarguments</key>
+				<false/>
+				<key>outputas</key>
+				<integer>0</integer>
+				<key>trimarguments</key>
+				<true/>
+				<key>variableprefix</key>
+				<string>split</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.split</string>
+			<key>uid</key>
+			<string>EACEA8BC-9DBF-4F23-AAB7-1191660D8417</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2407,33 +2354,52 @@ Snapshot received
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argument</key>
+				<string>'{query}', {variables}</string>
+				<key>cleardebuggertext</key>
+				<false/>
+				<key>processoutputs</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.debug</string>
+			<key>uid</key>
+			<string>8F5E0C3A-73BF-42FF-8D00-A1870FC9777A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>'{query}', {variables}</string>
+				<key>cleardebuggertext</key>
+				<false/>
+				<key>processoutputs</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.debug</string>
+			<key>uid</key>
+			<string>14FC800F-2F6F-4C4D-84F9-86C841A588C9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>102</integer>
+				<integer>0</integer>
 				<key>script</key>
-				<string>file_path="$HOME/Library/Application Support/Alfred/Workflow Data/com.joshua.shew.archive.page/execution_count.txt"
-
-execution_count=0
-
-if [[ -f "$file_path" ]]; then
-  first_line=$(head -n 1 "$file_path")
-  if [[ "$first_line" =~ ^[0-9]+$ ]]; then
-    execution_count=$first_line
-  fi
-fi
-
-((execution_count++))
-
-echo $execution_count &gt; "$file_path"
-
-echo -n $execution_count</string>
+				<string></string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>src/workflow_init_run.sh</string>
 				<key>type</key>
-				<integer>11</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -2458,6 +2424,23 @@ echo -n $execution_count</string>
 			<string>alfred.workflow.utility.debug</string>
 			<key>uid</key>
 			<string>8C0E0469-9387-47AE-BF9F-C10AE3620351</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>Got a response for (an) existing snapshot(s)</string>
+				<key>cleardebuggertext</key>
+				<false/>
+				<key>processoutputs</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.debug</string>
+			<key>uid</key>
+			<string>7FAFA9E8-6222-476B-B10B-DC2C7E13B445</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2495,23 +2478,6 @@ echo -n $execution_count</string>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>B8F40A67-8A87-464F-A6CB-630D6C0FFF03</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>Got a response for (an) existing snapshot(s)</string>
-				<key>cleardebuggertext</key>
-				<false/>
-				<key>processoutputs</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.debug</string>
-			<key>uid</key>
-			<string>7FAFA9E8-6222-476B-B10B-DC2C7E13B445</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2736,6 +2702,13 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<real>250</real>
 			<key>ypos</key>
 			<real>250</real>
+		</dict>
+		<key>14FC800F-2F6F-4C4D-84F9-86C841A588C9</key>
+		<dict>
+			<key>xpos</key>
+			<real>3770</real>
+			<key>ypos</key>
+			<real>315</real>
 		</dict>
 		<key>1CC3B9A5-664D-4DA7-9421-E5491A7C14D6</key>
 		<dict>
@@ -2988,6 +2961,13 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<real>4265</real>
 			<key>ypos</key>
 			<real>545</real>
+		</dict>
+		<key>8F5E0C3A-73BF-42FF-8D00-A1870FC9777A</key>
+		<dict>
+			<key>xpos</key>
+			<real>3890</real>
+			<key>ypos</key>
+			<real>315</real>
 		</dict>
 		<key>90747B33-028E-4046-890F-2A01E2483DB3</key>
 		<dict>
