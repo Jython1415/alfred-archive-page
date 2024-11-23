@@ -12,10 +12,16 @@
 # 2: Missing input file
 
 # Check if the input file exists
-if [[ ! -f ~/Downloads/Archive\ Page.alfredworkflow ]]; then
-    echo "Error: Missing input file 'Archive Page.alfredworkflow' in the ~/Downloads folder."
+input_file=""
+if [[ -f ~/Downloads/Archive\ Page.alfredworkflow ]]; then
+    input_file=~/Downloads/Archive\ Page.alfredworkflow
+elif [[ -f ~/Downloads/Archive.Page.alfredworkflow ]]; then
+    input_file=~/Downloads/Archive.Page.alfredworkflow
+else
+    echo "Error: Missing input file 'Archive Page.alfredworkflow' or 'Archive.Page.alfredworkflow' in the ~/Downloads folder."
     exit 2
 fi
+
 
 # TODO: improve to read the name from the info.plist file
 
@@ -23,7 +29,7 @@ fi
 temp_dir=$(mktemp -d /tmp/alfred_workflow.XXXXXX)
 
 # Extract the contents of the workflow file (zip) to the temporary directory
-unzip -o ~/Downloads/Archive\ Page.alfredworkflow -d "$temp_dir"
+unzip -o "$input_file" -d "$temp_dir"
 
 # Replace the contents of "./Workflow" with the contents of the extracted directory
 rm -rf ./Workflow/*
