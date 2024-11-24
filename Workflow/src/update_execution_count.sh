@@ -13,12 +13,17 @@ INSERT OR REPLACE INTO metadata (key, value) VALUES
      ('execution_count', '${execution_count}');
 SQL
 
+# Get the version number from the metadata table
+stored_version=$(/usr/bin/sqlite3 "${db_metadata}" \
+    "SELECT value FROM metadata WHERE key = 'version';")
+
 cat <<EOF
 {
-    "alfredworkflow": {
-        "variables": {
-            "execution_count": "${execution_count}"
-        }
+  "alfredworkflow" : {
+    "variables" : {
+      "execution_count" : "${execution_count}",
+      "stored_version" : "${stored_version}"
     }
+  }
 }
 EOF
