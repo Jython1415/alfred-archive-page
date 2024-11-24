@@ -9,6 +9,11 @@ fi
 echo "Initializing database: ${db_metadata}"
 
 /usr/bin/sqlite3 "${db_metadata}" <<SQL
+
 CREATE TABLE IF NOT EXISTS metadata (key TEXT PRIMARY KEY, value TEXT);
-INSERT OR REPLACE INTO metadata (key, value) VALUES ('execution_count', '0');
+
+INSERT OR REPLACE INTO metadata (key, value) VALUES
+    ('execution_count', '0')
+    ('version', '0.2.1');
+
 SQL
