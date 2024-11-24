@@ -146,6 +146,31 @@
 				<false/>
 			</dict>
 		</array>
+		<key>136E1FD8-398D-4A0C-9998-8EC4CAFF1248</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>47D58965-DF35-4D57-82A3-4D4F2B2BB109</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>fileexists</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>BD021C3E-B4A3-476D-B9D5-88F9C383B89F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>1CC3B9A5-664D-4DA7-9421-E5491A7C14D6</key>
 		<array>
 			<dict>
@@ -351,6 +376,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>39723F1B-145A-4419-80A4-BA4A674290B9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>47D58965-DF35-4D57-82A3-4D4F2B2BB109</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>399242CD-3558-40F0-8A85-34BA6165551C</key>
 		<array>
 			<dict>
@@ -433,17 +471,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>70EB7E1C-20D1-4B70-998B-A502BE805C3A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>47D58965-DF35-4D57-82A3-4D4F2B2BB109</string>
+				<string>136E1FD8-398D-4A0C-9998-8EC4CAFF1248</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -482,7 +510,17 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>B8F40A67-8A87-464F-A6CB-630D6C0FFF03</string>
+				<string>70EB7E1C-20D1-4B70-998B-A502BE805C3A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A57E1D75-DF1E-4A42-A976-B9BE1F066715</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -830,11 +868,11 @@
 		</array>
 		<key>B406C83D-84DB-45C2-93FE-E139A2AB2F40</key>
 		<array/>
-		<key>B8F40A67-8A87-464F-A6CB-630D6C0FFF03</key>
+		<key>BD021C3E-B4A3-476D-B9D5-88F9C383B89F</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>A57E1D75-DF1E-4A42-A976-B9BE1F066715</string>
+				<string>39723F1B-145A-4419-80A4-BA4A674290B9</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1422,6 +1460,29 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>src/update_execution_count.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>47D58965-DF35-4D57-82A3-4D4F2B2BB109</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
 				<string></string>
@@ -1518,7 +1579,7 @@
 				<array>
 					<dict>
 						<key>inputstring</key>
-						<string></string>
+						<string>{var:raw_url}</string>
 						<key>matchcasesensitive</key>
 						<false/>
 						<key>matchmode</key>
@@ -1640,6 +1701,28 @@
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>config</key>
+			<dict>
+				<key>fileutivariablename</key>
+				<string></string>
+				<key>outputfileuti</key>
+				<false/>
+			</dict>
+			<key>inboundconfig</key>
+			<dict>
+				<key>custominputarg</key>
+				<string>{var:db_metadata}</string>
+				<key>usecustominputarg</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.file</string>
+			<key>uid</key>
+			<string>136E1FD8-398D-4A0C-9998-8EC4CAFF1248</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
@@ -1665,8 +1748,22 @@
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<true/>
+				<key>variables</key>
+				<dict>
+					<key>db_metadata</key>
+					<string>{const:alfred_workflow_data}/metadata.db</string>
+					<key>raw_url</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
+			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>4126405F-D560-410A-9188-8AEA623C7B69</string>
 			<key>version</key>
@@ -2070,6 +2167,47 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>tasksettings</key>
+				<dict>
+					<key>target_path</key>
+					<string>{const:alfred_workflow_data}</string>
+				</dict>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/files-and-folders/directory.new</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>BD021C3E-B4A3-476D-B9D5-88F9C383B89F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>src/initialize_database.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>39723F1B-145A-4419-80A4-BA4A674290B9</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -2270,6 +2408,23 @@
 			<key>type</key>
 			<string>alfred.workflow.utility.debug</string>
 			<key>uid</key>
+			<string>A57E1D75-DF1E-4A42-A976-B9BE1F066715</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>'{query}', {variables}</string>
+				<key>cleardebuggertext</key>
+				<false/>
+				<key>processoutputs</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.debug</string>
+			<key>uid</key>
 			<string>90747B33-028E-4046-890F-2A01E2483DB3</string>
 			<key>version</key>
 			<integer>1</integer>
@@ -2388,29 +2543,6 @@ Snapshot received
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>src/workflow_init_run.sh</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>47D58965-DF35-4D57-82A3-4D4F2B2BB109</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string>Parsed location and HTTP code
 
@@ -2441,43 +2573,6 @@ Snapshot received
 			<string>alfred.workflow.utility.debug</string>
 			<key>uid</key>
 			<string>7FAFA9E8-6222-476B-B10B-DC2C7E13B445</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>'{query}', {variables}</string>
-				<key>cleardebuggertext</key>
-				<false/>
-				<key>processoutputs</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.debug</string>
-			<key>uid</key>
-			<string>A57E1D75-DF1E-4A42-A976-B9BE1F066715</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{query}</string>
-				<key>passthroughargument</key>
-				<true/>
-				<key>variables</key>
-				<dict>
-					<key>execution_count</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>B8F40A67-8A87-464F-A6CB-630D6C0FFF03</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2639,7 +2734,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 		<key>00525244-6E05-4E3A-816B-13444679A564</key>
 		<dict>
 			<key>xpos</key>
-			<real>4125</real>
+			<real>4710</real>
 			<key>ypos</key>
 			<real>155</real>
 		</dict>
@@ -2648,14 +2743,14 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Create new snapshot</string>
 			<key>xpos</key>
-			<real>1655</real>
+			<real>2240</real>
 			<key>ypos</key>
 			<real>65</real>
 		</dict>
 		<key>0436A082-2905-4151-B295-85E7AB3DB36E</key>
 		<dict>
 			<key>xpos</key>
-			<real>4205</real>
+			<real>4790</real>
 			<key>ypos</key>
 			<real>185</real>
 		</dict>
@@ -2669,21 +2764,21 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 		<key>08BB9266-2F81-48CE-85A6-F8F68C6A91C4</key>
 		<dict>
 			<key>xpos</key>
-			<real>2585</real>
+			<real>3170</real>
 			<key>ypos</key>
 			<real>295</real>
 		</dict>
 		<key>0A65E1A0-ECF7-469F-BF83-1C6BDFD5793F</key>
 		<dict>
 			<key>xpos</key>
-			<real>2230</real>
+			<real>2815</real>
 			<key>ypos</key>
 			<real>175</real>
 		</dict>
 		<key>0D393281-9E09-41A4-9B27-4614DC3B096D</key>
 		<dict>
 			<key>xpos</key>
-			<real>2980</real>
+			<real>3565</real>
 			<key>ypos</key>
 			<real>375</real>
 		</dict>
@@ -2692,7 +2787,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Interpret error</string>
 			<key>xpos</key>
-			<real>3630</real>
+			<real>4215</real>
 			<key>ypos</key>
 			<real>225</real>
 		</dict>
@@ -2703,38 +2798,45 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>ypos</key>
 			<real>250</real>
 		</dict>
+		<key>136E1FD8-398D-4A0C-9998-8EC4CAFF1248</key>
+		<dict>
+			<key>xpos</key>
+			<real>420</real>
+			<key>ypos</key>
+			<real>165</real>
+		</dict>
 		<key>14FC800F-2F6F-4C4D-84F9-86C841A588C9</key>
 		<dict>
 			<key>xpos</key>
-			<real>3770</real>
+			<real>4355</real>
 			<key>ypos</key>
 			<real>315</real>
 		</dict>
 		<key>1CC3B9A5-664D-4DA7-9421-E5491A7C14D6</key>
 		<dict>
 			<key>xpos</key>
-			<real>4105</real>
+			<real>4690</real>
 			<key>ypos</key>
 			<real>455</real>
 		</dict>
 		<key>20CE2AA3-389E-4EFE-A526-DE4D18552604</key>
 		<dict>
 			<key>xpos</key>
-			<real>3120</real>
+			<real>3705</real>
 			<key>ypos</key>
 			<real>245</real>
 		</dict>
 		<key>2878B481-3BCF-4C9F-A077-7570FF486787</key>
 		<dict>
 			<key>xpos</key>
-			<real>3630</real>
+			<real>4215</real>
 			<key>ypos</key>
 			<real>370</real>
 		</dict>
 		<key>28798E41-F413-4714-885B-AED3EAA72460</key>
 		<dict>
 			<key>xpos</key>
-			<real>835</real>
+			<real>1420</real>
 			<key>ypos</key>
 			<real>190</real>
 		</dict>
@@ -2743,42 +2845,42 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Use existing snapshot</string>
 			<key>xpos</key>
-			<real>2725</real>
+			<real>3310</real>
 			<key>ypos</key>
 			<real>65</real>
 		</dict>
 		<key>29826D0B-36BC-41FA-9097-D9432BAE1108</key>
 		<dict>
 			<key>xpos</key>
-			<real>1615</real>
+			<real>2200</real>
 			<key>ypos</key>
 			<real>290</real>
 		</dict>
 		<key>2BC44B43-52D6-4FDF-AC47-6FB7A4BDE083</key>
 		<dict>
 			<key>xpos</key>
-			<real>3935</real>
+			<real>4520</real>
 			<key>ypos</key>
 			<real>145</real>
 		</dict>
 		<key>2D623F48-4979-4B40-B451-7B807BDBF200</key>
 		<dict>
 			<key>xpos</key>
-			<real>2430</real>
+			<real>3015</real>
 			<key>ypos</key>
 			<real>165</real>
 		</dict>
 		<key>32B69491-AAE7-4CE2-9CA7-D4089BAD2818</key>
 		<dict>
 			<key>xpos</key>
-			<real>4205</real>
+			<real>4790</real>
 			<key>ypos</key>
 			<real>65</real>
 		</dict>
 		<key>3644ED83-88A2-4223-99FC-BC676333E623</key>
 		<dict>
 			<key>xpos</key>
-			<real>3830</real>
+			<real>4415</real>
 			<key>ypos</key>
 			<real>255</real>
 		</dict>
@@ -2787,7 +2889,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Calculate time since snapshot</string>
 			<key>xpos</key>
-			<real>2030</real>
+			<real>2615</real>
 			<key>ypos</key>
 			<real>145</real>
 		</dict>
@@ -2798,10 +2900,19 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>ypos</key>
 			<real>175</real>
 		</dict>
+		<key>39723F1B-145A-4419-80A4-BA4A674290B9</key>
+		<dict>
+			<key>note</key>
+			<string>Initialize the database</string>
+			<key>xpos</key>
+			<real>675</real>
+			<key>ypos</key>
+			<real>245</real>
+		</dict>
 		<key>399242CD-3558-40F0-8A85-34BA6165551C</key>
 		<dict>
 			<key>xpos</key>
-			<real>3865</real>
+			<real>4450</real>
 			<key>ypos</key>
 			<real>175</real>
 		</dict>
@@ -2810,21 +2921,21 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Request snapshot availability</string>
 			<key>xpos</key>
-			<real>1325</real>
+			<real>1910</real>
 			<key>ypos</key>
 			<real>145</real>
 		</dict>
 		<key>3AF9C32F-4456-4E5F-8486-4D9241942948</key>
 		<dict>
 			<key>xpos</key>
-			<real>1120</real>
+			<real>1705</real>
 			<key>ypos</key>
 			<real>145</real>
 		</dict>
 		<key>3DBFCECE-98BF-46F8-B734-C94784EBBA35</key>
 		<dict>
 			<key>xpos</key>
-			<real>775</real>
+			<real>1360</real>
 			<key>ypos</key>
 			<real>190</real>
 		</dict>
@@ -2833,14 +2944,14 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Make "save" request</string>
 			<key>xpos</key>
-			<real>2980</real>
+			<real>3565</real>
 			<key>ypos</key>
 			<real>225</real>
 		</dict>
 		<key>402E69EA-3702-43D8-8584-2D039249E558</key>
 		<dict>
 			<key>xpos</key>
-			<real>3630</real>
+			<real>4215</real>
 			<key>ypos</key>
 			<real>175</real>
 		</dict>
@@ -2854,7 +2965,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 		<key>463ECDE9-04E4-4D63-9D1B-615A6C814C88</key>
 		<dict>
 			<key>xpos</key>
-			<real>2585</real>
+			<real>3170</real>
 			<key>ypos</key>
 			<real>175</real>
 		</dict>
@@ -2863,51 +2974,51 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Parse output</string>
 			<key>xpos</key>
-			<real>3270</real>
+			<real>3855</real>
 			<key>ypos</key>
 			<real>225</real>
 		</dict>
 		<key>47D58965-DF35-4D57-82A3-4D4F2B2BB109</key>
 		<dict>
 			<key>note</key>
-			<string>Update execution count</string>
+			<string>Update the execution count</string>
 			<key>xpos</key>
-			<real>480</real>
+			<real>835</real>
 			<key>ypos</key>
-			<real>320</real>
+			<real>145</real>
 		</dict>
 		<key>49A074BB-F324-4659-BB93-99155A915C5A</key>
 		<dict>
 			<key>xpos</key>
-			<real>1910</real>
+			<real>2495</real>
 			<key>ypos</key>
 			<real>295</real>
 		</dict>
 		<key>57B8B0C0-26BB-4830-9DCF-4EE9628EAEA0</key>
 		<dict>
 			<key>xpos</key>
-			<real>3890</real>
+			<real>4475</real>
 			<key>ypos</key>
 			<real>245</real>
 		</dict>
 		<key>5E4BF472-472D-4ADA-B97B-83A0E3084786</key>
 		<dict>
 			<key>xpos</key>
-			<real>1910</real>
+			<real>2495</real>
 			<key>ypos</key>
 			<real>175</real>
 		</dict>
 		<key>5FFC78F7-A123-4DF8-9E0F-A57894FF7408</key>
 		<dict>
 			<key>xpos</key>
-			<real>920</real>
+			<real>1505</real>
 			<key>ypos</key>
 			<real>260</real>
 		</dict>
 		<key>63A6FE75-5B57-4FB8-B490-8C5824595B3D</key>
 		<dict>
 			<key>xpos</key>
-			<real>4055</real>
+			<real>4640</real>
 			<key>ypos</key>
 			<real>175</real>
 		</dict>
@@ -2916,77 +3027,77 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Parse the output</string>
 			<key>xpos</key>
-			<real>1615</real>
+			<real>2200</real>
 			<key>ypos</key>
 			<real>145</real>
 		</dict>
 		<key>70EB7E1C-20D1-4B70-998B-A502BE805C3A</key>
 		<dict>
 			<key>xpos</key>
-			<real>410</real>
+			<real>995</real>
 			<key>ypos</key>
 			<real>165</real>
 		</dict>
 		<key>769109FD-17B7-4D94-BC64-4BCFB39DD187</key>
 		<dict>
 			<key>xpos</key>
-			<real>775</real>
+			<real>1360</real>
 			<key>ypos</key>
 			<real>65</real>
 		</dict>
 		<key>7FAFA9E8-6222-476B-B10B-DC2C7E13B445</key>
 		<dict>
 			<key>xpos</key>
-			<real>1615</real>
+			<real>2200</real>
 			<key>ypos</key>
 			<real>350</real>
 		</dict>
 		<key>84CA0A9E-B9F5-4624-9515-AD93A632ACCF</key>
 		<dict>
 			<key>xpos</key>
-			<real>1970</real>
+			<real>2555</real>
 			<key>ypos</key>
 			<real>175</real>
 		</dict>
 		<key>8C0E0469-9387-47AE-BF9F-C10AE3620351</key>
 		<dict>
 			<key>xpos</key>
-			<real>3535</real>
+			<real>4120</real>
 			<key>ypos</key>
 			<real>325</real>
 		</dict>
 		<key>8D346847-EA2A-4B2E-A1D0-B068EA1614F4</key>
 		<dict>
 			<key>xpos</key>
-			<real>4265</real>
+			<real>4850</real>
 			<key>ypos</key>
 			<real>545</real>
 		</dict>
 		<key>8F5E0C3A-73BF-42FF-8D00-A1870FC9777A</key>
 		<dict>
 			<key>xpos</key>
-			<real>3890</real>
+			<real>4475</real>
 			<key>ypos</key>
 			<real>315</real>
 		</dict>
 		<key>90747B33-028E-4046-890F-2A01E2483DB3</key>
 		<dict>
 			<key>xpos</key>
-			<real>2290</real>
+			<real>2875</real>
 			<key>ypos</key>
 			<real>285</real>
 		</dict>
 		<key>916F26BE-5C39-46D1-BAC2-66F46A899384</key>
 		<dict>
 			<key>xpos</key>
-			<real>1465</real>
+			<real>2050</real>
 			<key>ypos</key>
 			<real>165</real>
 		</dict>
 		<key>945E75C2-3BF0-41F8-BAE7-20FE96C56608</key>
 		<dict>
 			<key>xpos</key>
-			<real>3475</real>
+			<real>4060</real>
 			<key>ypos</key>
 			<real>255</real>
 		</dict>
@@ -2995,7 +3106,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Create new snapshot</string>
 			<key>xpos</key>
-			<real>1160</real>
+			<real>1745</real>
 			<key>ypos</key>
 			<real>65</real>
 		</dict>
@@ -3004,35 +3115,35 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Create new snapshot</string>
 			<key>xpos</key>
-			<real>2585</real>
+			<real>3170</real>
 			<key>ypos</key>
 			<real>65</real>
 		</dict>
 		<key>A298ABDF-E140-447E-8435-D673AB2B784B</key>
 		<dict>
 			<key>xpos</key>
-			<real>1755</real>
+			<real>2340</real>
 			<key>ypos</key>
 			<real>165</real>
 		</dict>
 		<key>A494B119-203B-4344-B0ED-F93B647E8410</key>
 		<dict>
 			<key>xpos</key>
-			<real>3415</real>
+			<real>4000</real>
 			<key>ypos</key>
 			<real>255</real>
 		</dict>
 		<key>A57E1D75-DF1E-4A42-A976-B9BE1F066715</key>
 		<dict>
 			<key>xpos</key>
-			<real>685</real>
+			<real>995</real>
 			<key>ypos</key>
-			<real>350</real>
+			<real>260</real>
 		</dict>
 		<key>A660D27C-E4A0-4F57-879A-A72E86DAD017</key>
 		<dict>
 			<key>xpos</key>
-			<real>2725</real>
+			<real>3310</real>
 			<key>ypos</key>
 			<real>175</real>
 		</dict>
@@ -3041,28 +3152,28 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Create new snapshot</string>
 			<key>xpos</key>
-			<real>1910</real>
+			<real>2495</real>
 			<key>ypos</key>
 			<real>65</real>
 		</dict>
 		<key>AB15D4E8-5871-4F51-AB5B-37CA058FC1C7</key>
 		<dict>
 			<key>xpos</key>
-			<real>4205</real>
+			<real>4790</real>
 			<key>ypos</key>
 			<real>305</real>
 		</dict>
 		<key>AED0EFCC-BBB5-4EFB-B8CA-0CD94D351E7C</key>
 		<dict>
 			<key>xpos</key>
-			<real>2170</real>
+			<real>2755</real>
 			<key>ypos</key>
 			<real>175</real>
 		</dict>
 		<key>AEEA4683-BAD9-4A31-B31B-7A391CDF74DC</key>
 		<dict>
 			<key>xpos</key>
-			<real>4205</real>
+			<real>4790</real>
 			<key>ypos</key>
 			<real>425</real>
 		</dict>
@@ -3076,7 +3187,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 		<key>B0E82D33-B6B2-40B0-A0E2-574C08EB0B12</key>
 		<dict>
 			<key>xpos</key>
-			<real>665</real>
+			<real>1250</real>
 			<key>ypos</key>
 			<real>85</real>
 		</dict>
@@ -3085,21 +3196,21 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Make "save" request with the website</string>
 			<key>xpos</key>
-			<real>2980</real>
+			<real>3565</real>
 			<key>ypos</key>
 			<real>65</real>
 		</dict>
-		<key>B8F40A67-8A87-464F-A6CB-630D6C0FFF03</key>
+		<key>BD021C3E-B4A3-476D-B9D5-88F9C383B89F</key>
 		<dict>
 			<key>xpos</key>
-			<real>620</real>
+			<real>530</real>
 			<key>ypos</key>
-			<real>350</real>
+			<real>245</real>
 		</dict>
 		<key>BDD5DCB3-BB32-44C0-B535-987C5471110F</key>
 		<dict>
 			<key>xpos</key>
-			<real>3275</real>
+			<real>3860</real>
 			<key>ypos</key>
 			<real>375</real>
 		</dict>
@@ -3113,56 +3224,56 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 		<key>D1EB575C-418E-45CC-B6A0-5B1211CAC9CF</key>
 		<dict>
 			<key>xpos</key>
-			<real>1265</real>
+			<real>1850</real>
 			<key>ypos</key>
 			<real>175</real>
 		</dict>
 		<key>DE9CC0C4-98C1-4F76-BFC5-E4A327EAC219</key>
 		<dict>
 			<key>xpos</key>
-			<real>2785</real>
+			<real>3370</real>
 			<key>ypos</key>
 			<real>165</real>
 		</dict>
 		<key>E2A2A1F7-4F36-4DDA-A5B3-C6300ED1811F</key>
 		<dict>
 			<key>xpos</key>
-			<real>3865</real>
+			<real>4450</real>
 			<key>ypos</key>
 			<real>135</real>
 		</dict>
 		<key>E2D8EDDD-6E92-457D-911E-CEBB6C197299</key>
 		<dict>
 			<key>xpos</key>
-			<real>2585</real>
+			<real>3170</real>
 			<key>ypos</key>
 			<real>235</real>
 		</dict>
 		<key>E5187285-B1E1-4A8F-AEF8-F652B74F47C4</key>
 		<dict>
 			<key>xpos</key>
-			<real>1910</real>
+			<real>2495</real>
 			<key>ypos</key>
 			<real>235</real>
 		</dict>
 		<key>E7E4D48D-9953-4B87-826A-9EE0CF543A49</key>
 		<dict>
 			<key>xpos</key>
-			<real>4055</real>
+			<real>4640</real>
 			<key>ypos</key>
 			<real>135</real>
 		</dict>
 		<key>EACEA8BC-9DBF-4F23-AAB7-1191660D8417</key>
 		<dict>
 			<key>xpos</key>
-			<real>3770</real>
+			<real>4355</real>
 			<key>ypos</key>
 			<real>255</real>
 		</dict>
 		<key>F3D0A9DE-D2D0-424D-8086-CE80104F31A4</key>
 		<dict>
 			<key>xpos</key>
-			<real>510</real>
+			<real>1095</real>
 			<key>ypos</key>
 			<real>65</real>
 		</dict>
@@ -3171,7 +3282,7 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Use existing snapshot</string>
 			<key>xpos</key>
-			<real>3785</real>
+			<real>4370</real>
 			<key>ypos</key>
 			<real>65</real>
 		</dict>
@@ -3180,28 +3291,28 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>note</key>
 			<string>Is valid snapshot?</string>
 			<key>xpos</key>
-			<real>2290</real>
+			<real>2875</real>
 			<key>ypos</key>
 			<real>145</real>
 		</dict>
 		<key>FB3E3DA5-0884-419F-B21F-3296C369747B</key>
 		<dict>
 			<key>xpos</key>
-			<real>920</real>
+			<real>1505</real>
 			<key>ypos</key>
 			<real>180</real>
 		</dict>
 		<key>FB750BE0-0150-4717-B4A8-AB29E0FB70B4</key>
 		<dict>
 			<key>xpos</key>
-			<real>3535</real>
+			<real>4120</real>
 			<key>ypos</key>
 			<real>245</real>
 		</dict>
 		<key>FF712D33-6EBC-4801-877C-D68C01D5BF29</key>
 		<dict>
 			<key>xpos</key>
-			<real>4205</real>
+			<real>4790</real>
 			<key>ypos</key>
 			<real>565</real>
 		</dict>
@@ -3295,8 +3406,6 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<string>always_on_logging</string>
 		</dict>
 	</array>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
 	<string>0.2.1</string>
 	<key>webaddress</key>
