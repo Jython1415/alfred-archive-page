@@ -219,6 +219,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>2373EC8A-3DBC-4D00-9E91-D985AF3B0F04</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A660D27C-E4A0-4F57-879A-A72E86DAD017</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>28798E41-F413-4714-885B-AED3EAA72460</key>
 		<array>
 			<dict>
@@ -705,7 +718,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>01EE9E8A-EB7D-47CA-8ADE-104A4ABE6DBE</string>
+				<string>2373EC8A-3DBC-4D00-9E91-D985AF3B0F04</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -719,6 +732,16 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>A660D27C-E4A0-4F57-879A-A72E86DAD017</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>068277C0-0856-4922-A7AA-D20F0D950905</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1074,6 +1097,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>1863746C-4803-4DF7-9A2C-E268FEC79BA6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>FB750BE0-0150-4717-B4A8-AB29E0FB70B4</key>
 		<array>
@@ -1140,6 +1173,22 @@
 			<key>type</key>
 			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
+			<string>2373EC8A-3DBC-4D00-9E91-D985AF3B0F04</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>9879AB16-9774-4C2E-9CE5-35C4F754EB11</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
 			<string>01EE9E8A-EB7D-47CA-8ADE-104A4ABE6DBE</string>
 			<key>version</key>
 			<integer>1</integer>
@@ -1149,14 +1198,6 @@
 			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
 			<string>9E8B6FA8-4A82-41D9-AF10-D3E9E0E79B15</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
-			<key>uid</key>
-			<string>9879AB16-9774-4C2E-9CE5-35C4F754EB11</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2135,6 +2176,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>A (valid) existing snapshot could not be found</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>068277C0-0856-4922-A7AA-D20F0D950905</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -2409,6 +2471,27 @@
 			<string>alfred.workflow.utility.debug</string>
 			<key>uid</key>
 			<string>A57E1D75-DF1E-4A42-A976-B9BE1F066715</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Use the ⌘ modifer to skip this step</string>
+				<key>title</key>
+				<string>Checking if a snapshot already exists...</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>1863746C-4803-4DF7-9A2C-E268FEC79BA6</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2740,6 +2823,8 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 		</dict>
 		<key>01EE9E8A-EB7D-47CA-8ADE-104A4ABE6DBE</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
 			<key>note</key>
 			<string>Create new snapshot</string>
 			<key>xpos</key>
@@ -2753,6 +2838,13 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<real>4790</real>
 			<key>ypos</key>
 			<real>185</real>
+		</dict>
+		<key>068277C0-0856-4922-A7AA-D20F0D950905</key>
+		<dict>
+			<key>xpos</key>
+			<real>3310</real>
+			<key>ypos</key>
+			<real>240</real>
 		</dict>
 		<key>0686D024-C9E7-458C-8DE8-51341DB82E2E</key>
 		<dict>
@@ -2812,6 +2904,13 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<key>ypos</key>
 			<real>315</real>
 		</dict>
+		<key>1863746C-4803-4DF7-9A2C-E268FEC79BA6</key>
+		<dict>
+			<key>xpos</key>
+			<real>1705</real>
+			<key>ypos</key>
+			<real>265</real>
+		</dict>
 		<key>1CC3B9A5-664D-4DA7-9421-E5491A7C14D6</key>
 		<dict>
 			<key>xpos</key>
@@ -2825,6 +2924,15 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 			<real>3705</real>
 			<key>ypos</key>
 			<real>245</real>
+		</dict>
+		<key>2373EC8A-3DBC-4D00-9E91-D985AF3B0F04</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<real>3170</real>
+			<key>ypos</key>
+			<real>25</real>
 		</dict>
 		<key>2878B481-3BCF-4C9F-A077-7570FF486787</key>
 		<dict>
@@ -3103,15 +3211,19 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 		</dict>
 		<key>9879AB16-9774-4C2E-9CE5-35C4F754EB11</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
 			<key>note</key>
 			<string>Create new snapshot</string>
 			<key>xpos</key>
 			<real>1745</real>
 			<key>ypos</key>
-			<real>65</real>
+			<real>25</real>
 		</dict>
 		<key>9E8B6FA8-4A82-41D9-AF10-D3E9E0E79B15</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
 			<key>note</key>
 			<string>Create new snapshot</string>
 			<key>xpos</key>
@@ -3149,6 +3261,8 @@ Please provide feedback in [the dedicated topic on the Alfred "Share Your Workfl
 		</dict>
 		<key>AAC509A6-5283-434F-B3A5-B8BDCE0246BB</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
 			<key>note</key>
 			<string>Create new snapshot</string>
 			<key>xpos</key>
