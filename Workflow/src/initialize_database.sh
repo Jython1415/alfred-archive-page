@@ -14,6 +14,6 @@ CREATE TABLE IF NOT EXISTS metadata (key TEXT PRIMARY KEY, value TEXT);
 
 INSERT OR REPLACE INTO metadata (key, value) VALUES
     ('execution_count', '0')
-    ('version', '0.2.1');
+    ('version', '0.2.2');
 
 SQL
