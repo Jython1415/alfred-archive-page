@@ -1,28 +1,10 @@
 #!/bin/zsh --no-rcs
 
-# If "db_metadata" is not set, error
-if [[ -z "${db_metadata}" ]]; then
-    echo "Error: db_metadata is not set" >&2
-    exit 1
-fi
-
 # If "db_data" is not set, error
 if [[ -z "${db_data}" ]]; then
     echo "Error: db_data is not set" >&2
     exit 1
 fi
-
-echo "Initializing database: ${db_metadata}"
-
-/usr/bin/sqlite3 "${db_metadata}" <<SQL
-
-CREATE TABLE IF NOT EXISTS metadata (key TEXT PRIMARY KEY, value TEXT);
-
-INSERT OR REPLACE INTO metadata (key, value) VALUES
-    ('execution_count', '0')
-    ('version', '${version}');
-
-SQL
 
 /usr/bin/sqlite3 "${db_data}" <<SQL
 
@@ -37,14 +19,26 @@ CREATE TABLE IF NOT EXISTS request (
     request_time TEXT NOT NULL,
     request_timeout_limit_sec INTEGER NOT NULL,
     workflow_version TEXT NOT NULL,
-    response_timed_out INTEGER NOT NULL,
-    response_code INTEGER,
-    response_url TEXT,
-    response_body TEXT,
-    response_wait_ms INTEGER NOT NULL,
+    response_code_recieved INTEGER NOT NULL,
+    response_code INTEGER NOT NULL,
+    response_body TEXT NOT NULL,
+    response_time_ms INTEGER NOT NULL,
     FOREIGN KEY (url_id) REFERENCES url (url_id)
 );
 
 SQL
 
-echo -n "success"
+# If the SQL command failed, error
+if [[ $? -ne 0 ]]; then
+    # Delete the database file if it exists
+    if [[ -f "${db_data}" ]]; then
+        rm "${db_data}"
+    fi
+
+    echo "Error: Failed to initialize database" >&2
+    exit 1
+fi
+
+# If the SQL command succeeded, exit
+
+exit 0
